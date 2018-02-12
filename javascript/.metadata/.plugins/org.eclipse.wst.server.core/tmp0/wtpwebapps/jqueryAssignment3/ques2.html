@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function() {
+
+		var obj = {
+			one : 1,
+			two : 2,
+			three : 3,
+			four : 4,
+			five : 5
+		};
+
+		$.each(obj, function(k, v) {
+			/* alert("Key: " + k + ", Value: " + v); */
+			$( "#id1").append( document.createTextNode( "Key: " + k + ", Value: " + v+" \n") );
+		});
+
+	});
+</script>
+</head>
+<body>
+<div id="id1"></div>
+</body>
+</html>

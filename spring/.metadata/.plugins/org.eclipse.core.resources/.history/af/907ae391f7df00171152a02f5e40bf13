@@ -1,0 +1,21 @@
+package com.psl.assignment1;
+
+public class Train {
+	private Ticket ticket;
+	private String name;
+
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Train() {
+		System.out.println("train default constructor");
+	}
+
+	
+}

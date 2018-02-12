@@ -1,0 +1,37 @@
+package com.psl;
+
+public class Audience {
+	public void takeSeats() {
+		System.out.println("take seats");
+	}
+
+	public void SwitchOffPhones() {
+		System.out.println("switch off phones");
+	}
+
+	public void demandRefund() {
+		System.out.println("Demand refund");
+	}
+
+	public void applaud() {
+		System.out.println("applaud");
+	}
+
+	public void goHome() {
+		System.out.println("return home");
+	}
+
+	public void record() {
+		// before
+		System.out.println("take seats");
+		System.out.println("switch off phones");
+		System.out.println("audience start camera");
+
+		// during
+
+		// after
+		System.out.println("return home");
+
+	}
+
+}

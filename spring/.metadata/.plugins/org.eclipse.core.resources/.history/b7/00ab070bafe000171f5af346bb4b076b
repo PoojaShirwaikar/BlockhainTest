@@ -1,0 +1,8 @@
+package com.psl;
+
+public class Train {
+	public void trainRunning() {
+
+	}
+
+}

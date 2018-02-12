@@ -1,0 +1,26 @@
+package com.psl.assignment1;
+
+public class Ticket {
+
+	private String train;
+	private String time;
+	private String price;
+	private String source;
+	private String destination;
+
+	public Ticket(String train, String time, String price, String source,
+			String destination) {
+		System.out.println("Parametrized constructor:ticket");
+		this.train = train;
+		this.time = time;
+		this.price = price;
+		this.source = source;
+		this.destination = destination;
+	}
+
+	public Ticket() {
+		System.out.println("default constructor:ticket");
+
+	}
+
+}

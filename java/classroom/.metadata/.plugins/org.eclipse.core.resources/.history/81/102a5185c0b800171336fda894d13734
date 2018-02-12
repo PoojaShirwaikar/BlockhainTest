@@ -1,0 +1,38 @@
+package com.psl.ques2;
+
+
+public class Thread100 implements Runnable{
+
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		try {
+			Thread.sleep(val);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if (Thread.currentThread().getName().equals("one")) {
+			System.out.println(Thread.currentThread().getName()
+					+ " sleep time: " + val);
+
+		} else {
+			System.out.println(Thread.currentThread().getName()
+					+ " sleep time: " + val);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+
+		Thread100 obj = new Thread100();
+		Thread t1 = new Thread(obj, "one");
+
+		t1.start();
+	}
+
+	
+
+
+}

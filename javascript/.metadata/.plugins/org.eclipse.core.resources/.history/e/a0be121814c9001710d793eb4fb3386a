@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<style>
+.main {
+	background: red;
+	width: 300px;
+	height: 300px
+}
+</style>
+<script>
+	$(function() {
+		var c = 0;
+		if (c == 0) {
+			$("#div1").click(function() {
+				time1 = $.now();
+			});
+			c++;
+		} else {
+			$("#div1").click(function() {
+				time2 = $.now();
+			});
+
+		}
+
+		$("#b1").click(function() {
+			count = time1 + time2;
+			alert(count);
+		});
+
+	});
+</script>
+</head>
+<body>
+	<div id="div1" class="main">hey there</div>
+	<button id="b1">Click here to get time</button>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<style>
+.main {
+	backgroundColor: red;
+}
+</style>
+<script>
+	$(function() {
+		$(".main").click(function() {
+
+			$("div").toggleClass("main");
+
+			/* 	if ($(".main").hasClass("main")) {
+					$(".main").removeClass("main");
+				} else {				
+					$("div").addClass("main");
+				} */
+		})
+	});
+</script>
+</head>
+<body>
+	<div style="background: blue">here</div>
+</body>
+</html>

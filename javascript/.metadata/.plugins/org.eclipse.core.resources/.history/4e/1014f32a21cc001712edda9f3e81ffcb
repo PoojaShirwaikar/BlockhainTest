@@ -1,0 +1,11 @@
+// var i=$("#id1").val();
+
+
+for (var index = 0; index <i ; index++) {
+        var no=index;
+        postMessage(no);
+
+    }
+
+/*    postMessage(no);
+*/

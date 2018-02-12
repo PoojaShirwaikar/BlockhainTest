@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	$(function() {
+		$("#empid").blur(function() {
+			var pn = $("#empid").val();
+			var url = "requestProcessorJSON.jsp?empid="+pn;
+			$.ajax({
+				type : "GET",
+				url : url,
+				dataType : "JSON",
+				success : function(response) {
+					console.log(response);
+					 $("#name").val(response.name);
+					$("#company").val(response.company); 
+
+				}
+			})
+		})
+	});
+</script>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td><label>employee id </label></td>
+			<td><input type="text" id="empid"></td>
+		</tr>
+
+		<tr>
+			<td><label>employee name </label></td>
+			<td><input type="text" id="name"></td>
+		</tr>
+
+		<tr>
+			<td><label>employee company </label></td>
+			<td><input type="text" id="company"></td>
+		</tr>
+	</table>
+
+	<script>
+		
+	document.getElementById("empid").onblur=getEmployeeDetails;
+	
+	function getEmployeeDetails(){
+		xml=new XMLHttpRequest();
+		var empid=document.getElementById('empid').value;
+		var url="requestProcessorXML.jsp?empid="+empid;
+		xml.open("GET",url,true);	
+		xml.onreadystatechange=handleResponse;	
+		xml.send();
+	}
+	
+	
+	function handleResponse(){
+		
+		
+			if(xml.readyState==4 && xml.status==200)
+			{
+				var response=xml.responseXML;
+				
+				var x=response.getElementsByTagName("data")[0];
+				var s1=x.childNodes[0].textContent;
+				var s2=x.childNodes[1].textContent;
+				//console.log(s1);
+				
+				document.getElementById('name').value = s1;
+				document.getElementById('company').value = s2;
+			}
+		
+	}
+	
+	
+	</script>
+</body>
+</html>

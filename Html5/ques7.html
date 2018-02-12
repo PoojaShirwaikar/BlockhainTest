@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#playpause").click(playPauseHandler);
+		$("#increaseVolume").click(increaseVolHandler);
+		$("#decreaseVolume").click(decreaseVolHandler);
+
+		function playPauseHandler() {
+			var video1 = document.getElementById("video1");
+			if (video1.paused) {
+				video1.play();
+				$("#playpause").prop("value", "Pause");
+			} else {
+				video1.pause();
+				$("#playpause").prop("value", "Play");
+			}
+		}
+
+		function increaseVolHandler() {
+			var video1 = document.getElementById("video1");
+			if (video1.volume == 1.0) {
+				alert("Volume is max.");
+			} else {
+				video1.volume += 0.1;
+			}
+		}
+
+		function decreaseVolHandler() {
+			var video1 = document.getElementById("video1");
+			if (video1.volume < 0.1) {
+
+				alert("Volume is min.");
+			} else {
+
+				video1.volume -= 0.1;
+			}
+		}
+
+	});
+</script>
+</head>
+
+<body>
+
+	<video id="video1">
+        <source  src="media/podcast_teaser.mp4"> 
+    </video>
+	<div>
+		<input type="button" id="playpause" value="Play" /> <input
+			type="button" id="decreaseVolume" value="Decrease Vol" /> <input
+			type="button" id="increaseVolume" value="Increase Vol" />
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Parent(n){
+        this.name=n;
+        this.location=["goa","pune"];
+        this.show=function(){
+            return this.name;
+        }
+    }
+
+
+Parent.prototype.display=function(){
+    return "i am at prototype level";   //wont get   inherited by classical inheritance
+}
+
+
+    
+    function Child(n){
+        Parent.call(this,n);
+    }
+
+    var child1=new Child('son');
+    var child2=new Child('daughter');
+
+    child1.location.push('nagpur');
+    
+    alert(child1.show());
+    alert(child2.show());
+
+
+    </script>
+
+    
+</body>
+</html>

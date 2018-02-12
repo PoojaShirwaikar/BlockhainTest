@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+div {
+	width: 250px;
+	height: 190px;
+	background-color: blue;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#Fadeion").click(function() {
+			$("#thediv").fadeIn(2000, "linear");
+		})
+
+		$("#Fadeout").click(function() {
+			$("#thediv").fadeOut(2000, "swing");
+		})
+
+		$("#Fadeto3").click(function() {
+			$("#thediv").fadeTo(2000,0.3);
+		})
+	});
+</script>
+
+
+</head>
+<body>
+	<div id="thediv">the div</div>
+	<button id="Fadeion">Fade in!</button>
+	<button id="Fadeout">Fade out!</button>
+	<button id="Fadeto3">Fadeto3!</button>
+
+</body>
+</html>

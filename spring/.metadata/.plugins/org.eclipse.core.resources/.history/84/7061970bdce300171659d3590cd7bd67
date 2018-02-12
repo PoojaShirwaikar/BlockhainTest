@@ -1,0 +1,62 @@
+package com.psl.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.psl.beans.BloodBank;
+import com.psl.service.BloodBankService;
+
+@Controller("donor")
+public class BloodBankController {
+	@Autowired
+	private BloodBankService service;
+
+	// @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
+	// public String showHomePage(Model model) {
+	// System.out.println("in bloodbank controller.showHomePage()");
+	// model.addAttribute("message", "hello world!");
+	//
+	// return "home";
+	// }
+
+	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
+	public String showHome(Model model) {
+
+		model.addAttribute("message", "Blood Bank Page");
+		model.addAttribute("donor", new BloodBank());
+		List<BloodBank> list = service.getAllDonors();
+		model.addAttribute("list", list);
+		return "home";
+	}
+
+	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.POST)
+	public String register(Model model, @Valid @ModelAttribute BloodBank d,
+			BindingResult result) {
+		System.out.println("Registration" + d);
+		if (result.hasErrors()) {
+			return "home";
+		}
+		service.createDonor(d);
+		return "redirect:/home";
+	}
+
+	@RequestMapping(value = "/{donor}", method = RequestMethod.GET)
+	public String showEmpPage(Model model, @PathVariable String empName,
+			@RequestParam(required = false) String blood_grp) {
+		model.addAttribute("donor", empName);
+		model.addAttribute("blood_grp", blood_grp);
+		return "donor";
+	}
+
+}

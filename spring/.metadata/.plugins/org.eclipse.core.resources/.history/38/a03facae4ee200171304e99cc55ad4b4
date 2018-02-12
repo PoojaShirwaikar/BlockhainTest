@@ -1,0 +1,35 @@
+package com.psl.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BloodBankService {
+	@Autowired
+	private iDonorDAO dao;
+
+	public iDonorDAO getDao() {
+		return dao;
+	}
+
+	public void setDao(iDonorDAO dao) {
+		this.dao = dao;
+	}
+
+	public void createDonor(Donor e) {
+		dao.createDonor(e);
+
+	}
+
+	public void updateDonor(int id, String name, String blood_grp) {
+		dao.updateDonor(id, name, blood_grp);
+	}
+
+	public void deleteDonor(int id) {
+		dao.deleteDonor(id);
+	}
+
+	public List<Donor> getAllDonors() {
+		return dao.getAllDonors();
+	}
+}

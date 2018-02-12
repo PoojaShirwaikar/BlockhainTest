@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="jquery.watermark.min.js"></script>
+    <script>
+        $(function () {
+            $("img").watermark(
+                {
+                    text:"Bruce Lee !",
+                    textSize: 50,
+                    textWidth:300,
+                    margin:30
+                }
+            );
+          
+            $("#date1").mask("99/99/9999",
+            {
+            	placeholder:"mm/dd/yyyy",
+            	completed:function(){
+            		alert("Entered date is :"+ this.val());
+            	}
+            });
+       
+            $("#phone1").mask("(999)999-9999");
+            $("#prodkey1").mask("a*-999-a999");
+
+           
+        });
+    </script>
+</head>
+<body>
+    <img src="images/Bruce.jpg" width="300" height="300"/>
+    <br/>
+    Date:- <input type="text" id="date1"/><br/>
+    Phone:- <input type="text" id="phone1"/><br/>
+    ProductKey:<input type="text" id="prodkey1"/>
+</body>
+</html>

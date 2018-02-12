@@ -1,0 +1,19 @@
+package com.tienda.service;
+
+import com.tienda.bean.Product;
+import com.tienda.bean.User;
+import com.tienda.util.DataStore;
+import com.tienda.util.ProductNotFoundException;
+import com.tienda.util.UserNotFoundException;
+
+public class TiendaService {
+	public User getUserDetails(String username) throws UserNotFoundException {
+		return new DataStore().getUser(username);
+	}
+
+	public Product getProductDetails(String code)
+			throws ProductNotFoundException {
+		return new DataStore().getProduct(code);
+	}
+
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+Name:
+<input 
+	<script>
+		 if (localStorage.visitorHits) {
+			document
+					.write("visitor hits: "
+							+ (localStorage.visitorHits = Number(localStorage.visitorHits) + 1));
+		} else {
+			document
+					.write("visitor hits: "
+							+ (localStorage.visitorHits = 1));
+		} 
+	
+	</script>
+</body>
+</html>

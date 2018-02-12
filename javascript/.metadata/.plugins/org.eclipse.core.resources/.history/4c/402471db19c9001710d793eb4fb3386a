@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<style>
+div {
+	width: 250px;
+	height: 190px;
+	background-color: blue;
+}
+</style>
+<script>
+	$(function() {
+		$("#start").click(function() {
+			$("#div").append("<p>new para</p>");
+			
+		})
+	});
+</script>
+</head>
+<body>
+	<div>here</div>
+	<button id="start">start</button>
+	<button id="stop">stop</button>
+
+</body>
+</html>

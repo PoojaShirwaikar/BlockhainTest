@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<table>
+		<form name="form1" action="">
+			<tr>
+				<td border="1">Result: <input id="id1" name="num1" type="text"
+					size=10 /></td>
+			</tr>
+		<tr>
+			<td><input id="a" name="add" type="button" value="add" /> <input
+				id="s" name="sub" type="button" value="sub" /> <input id="m"
+				name="multiply" type="button" value="multiply" /> <input id="d"
+				name="divide" type="button" value="divide" /> <input id="c"
+				type="button" onClick="clears()" value="Clear" /></td>
+		</tr>
+		</form>
+	</table>
+
+
+	<script type="text/javascript">
+		var input = prompt("Enter the input", input);
+		var ele = input.split(" ");
+		//alert(ele);
+		var result = document.getElementById("id1");
+
+		document.getElementById("a").addEventListener("click", add, true);
+		document.getElementById("s").addEventListener("click", sub, true);
+		document.getElementById("m").addEventListener("click", mul, true);
+		document.getElementById("d").addEventListener("click", div, true);
+		document.getElementById("c").addEventListener("click", clears, true);
+
+		function add() {
+			//	alert("hey");
+			var e = 0;
+			for (var i = 0; i < ele.length; i++) {
+				e = e + parseInt(ele[i]);
+			}
+			result.value = e;
+		}
+
+		function sub() {
+			//	alert("hey");
+
+			result.value = parseInt(ele[0]) - parseInt(ele[1]);
+		}
+
+		function mul() {
+			//	alert("hey");
+			result.value = parseInt(ele[0]) * parseInt(ele[1]);
+		}
+
+		function div() {
+			//	alert("hey");
+			result.value = parseInt(ele[0]) / parseInt(ele[1]);
+		}
+		function clears() {
+			//	alert("hey");
+			result.value = " ";
+		}
+	</script>
+
+
+
+
+</body>
+</html>

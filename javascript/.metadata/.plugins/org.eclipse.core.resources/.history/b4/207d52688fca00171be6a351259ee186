@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		/* if (localStorage.visitorHits) {
+			document
+					.write("visitor hits: "
+							+ (localStorage.visitorHits = Number(localStorage.visitorHits) + 1));
+		} else {
+			document
+					.write("visitor hits: "
+							+ (localStorage.visitorHits = 1));
+		} */
+		
+	/* 	 if (sessionStorage.visitorHits) {
+				document
+						.write("visitor hits: "
+								+ (sessionStorage.visitorHits = Number(sessionStorage.visitorHits) + 1));
+			} else {
+				document
+						.write("visitor hits: "
+								+ (sessionStorage.visitorHits = 1));
+			} */
+			
+			
+			sessionStorage.removeItem('visitorHits');
+			sessionStorage.clear();
+
+			
+	</script>
+
+</body>
+</html>

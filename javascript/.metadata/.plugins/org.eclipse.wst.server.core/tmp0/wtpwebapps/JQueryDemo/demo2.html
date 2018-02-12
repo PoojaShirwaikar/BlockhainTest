@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".main").click(function() {
+
+			$("div").toggleClass("main");
+
+			/* 	if ($(".main").hasClass("main")) {
+					$(".main").removeClass("main");
+				} else {				
+					$("div").addClass("main");
+				} */
+		})
+
+	});
+</script>
+<style>
+.main {
+	width: 250px;
+	height: 180px;
+	margin: 10px;
+	padding: 20px;
+	background: blue;
+	color: peachpuff;
+	font-size: x-large;
+	border: 2px solid black;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<div class="main">Hello!</div>
+
+</body>
+</html>

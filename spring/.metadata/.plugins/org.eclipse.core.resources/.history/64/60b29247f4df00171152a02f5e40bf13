@@ -1,0 +1,35 @@
+package com.psl.assignment1;
+
+public class Ticket {
+
+	private Train train;
+	private String cost;
+
+	public Ticket(Train train, String cost) {
+		System.out.println("ticket parametrised constructor:ticket");
+		this.train = train;
+		this.cost = cost;
+	}
+
+	public Train getTrain() {
+		return train;
+	}
+
+	public void setTrain(Train train) {
+		this.train = train;
+	}
+
+	public String getCost() {
+		return cost;
+	}
+
+	public void setCost(String cost) {
+		this.cost = cost;
+	}
+
+	public Ticket() {
+		System.out.println("ticket default constructor:ticket");
+	}
+	
+
+}

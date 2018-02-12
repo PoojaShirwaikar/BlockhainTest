@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div>
+                <table>
+                    <tr>
+                        <td><img id="one" src="Desert.jpg" width="200px" height="200px"></td>
+                        <td><img id="two" src="Lighthouse.jpg" width="200px"
+                            height="200px"></td>
+                        <td><img id="three" src="Penguins.jpg" width="200px"
+                            height="200px"></td>
+                        <td><img id="four" src="Tulips.jpg" width="200px"
+                            height="200px"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="div2"></div>
+  
+            <script>
+                var p = document.getElementsByTagName("img");
+           //     for (var index = 0; index < 3; index++) {
+                    for (i = 0; i < p.length; i++) {
+                        p[i].addEventListener("click", function() {
+                        var d = document.getElementById("div2");
+                        if(d.childNodes.length>2)
+                        {
+                            alert("Cannot add more then 3 images");
+                        }
+                        else{
+                            var l = document.createElement("img");
+                        l.setAttribute('src', this.getAttribute("src"));
+                        l.setAttribute('width', "200px");
+                        l.setAttribute('height', "200px");
+
+                        //alert(d.childNodes.length);
+                       
+                        d.appendChild(l);
+                        
+                        var t= this.getAttribute("id");
+                       document.getElementById(t).remove(t);
+                        }
+                       
+                        }, true);
+                    }
+                    
+            //   }
+               
+               
+           
+               
+            </script>
+    
+</body>
+</html>

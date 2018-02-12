@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<script>
+	$(document).ready(function() {
+		
+
+		
+</script>
+</head>
+
+<body>
+	<video id="video1" src="podcast_teaser.mp4"></video>
+	<div>
+		<input type="button" id="playpause" value="Play" /> <input
+			type="button" id="decreaseVolume" value="Decrease Vol" /> <input
+			type="button" id="increaseVolume" value="Increase Vol" />
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td><label>employee id </label></td>
+			<td><input type="text" id="empid"></td>
+		</tr>
+
+		<tr>
+			<td><label>employee name </label></td>
+			<td><input type="text" id="name"></td>
+		</tr>
+
+		<tr>
+			<td><label>employee company </label></td>
+			<td><input type="text" id="company"></td>
+		</tr>
+	</table>
+
+	<script>
+		document.getElementById("empid").onblur = getEmployeeDetails;
+
+		function getEmployeeDetails() {
+			xml = new XMLHttpRequest();
+			var empid = document.getElementById('empid').value;
+			var url = "requestProcessor.jsp?empid=" + empid;
+			xml.open("GET", url, true);
+			xml.onreadystatechange = handleResponse;
+			xml.send();
+		}
+
+		function handleResponse() {
+
+			if (xml.readyState == 4 && xml.status == 200) {
+				var response = xml.responseText;
+
+				var str = response.split(",");
+				document.getElementById('name').value = str[0];
+				document.getElementById('company').value = str[1];
+
+			}
+
+		}
+	</script>
+</body>
+</html>

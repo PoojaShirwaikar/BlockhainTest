@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+      
+      @keyframes slideIn{
+          from{
+              margin-left: 100%
+          }
+          to{
+              margin-left: 0%;
+              background-color: yellow;
+
+          }
+      }  
+    
+        div{
+    
+            background-color: green;
+            height: 300px;
+            width: 300px;
+            animation-name: slideIn;
+            animation-duration: 7s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div id="div1"></div>
+    </body>
+    </html>

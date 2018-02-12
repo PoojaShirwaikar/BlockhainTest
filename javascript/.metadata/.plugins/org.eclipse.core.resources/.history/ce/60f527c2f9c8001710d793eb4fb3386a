@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js">
+	
+</script>
+<script src="jquery.watermark.min.js"></script>
+<script>
+	$(function() {
+
+		$("img").watermark({
+
+			text : "Desert",
+			textSize : 50,
+			textWidth : 300,
+			margin : 30
+		});
+
+		$("#date1").mask("99/99/9999", {
+
+			placeholder : "mm/dd/yyyy",
+			completed : function() {
+				alert("enter date: " + this.val());
+			}
+
+		});
+
+		$("#phone1").mask("(999)999-9997");
+
+		$("#productkey1").mask("a*-999-a999");
+
+	});
+</script>
+</head>
+<body>
+	<img src="Desert.jpg" width="200px" height="200px"></img>
+	<br /> Date:
+	<input type="text" id="date1" /> Phone:
+	<input type="text" id="phone1" /> Product Key:
+	<input type="text" id="productkey1" />
+
+</body>
+</html>

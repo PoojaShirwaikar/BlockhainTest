@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		//alert($("#list1").text());
+		//alert($("#list1").html());
+		//	$("#list2").text("<li>this is new list item</li>")
+		//$("#list2").html("<li>this is new list item</li>")
+		//	$("p:last").text("new para");
+
+		//	var mypara = $("<p>new paragraph</p>");
+		//		$("#para3").html(mypara);
+
+		//	$("#para3").append(" with dynamic text");
+
+		//	$("#para1").appendTo("p:last");
+
+		//	$("a").attr("target","_blank");
+		//$("a").removeAttr('href');
+		
+		$("$b1")
+		
+
+	});
+</script>
+</head>
+<body>
+	<a href='Desert.jpg'><img src="Desert.jpg" width="200px"
+		height="200px" /></a>
+	<button id="b1" >click here</button>
+	<ul id="list2"></ul>
+	<ul id="list1">
+		<li class="a">item 1</li>
+		<li class="a">item 2</li>
+		<li class="b">item 3</li>
+		<li class="b">item 4</li>
+	</ul>
+
+
+	<p id="para1" class="a">this is a paragraph 1</p>
+	<p>this is para 2</p>
+	<ul id="list3">
+		<li>item 1</li>
+		<li>item 2</li>
+
+	</ul>
+	<p id="para3" class="b">this is para 3</p>
+	<p class="b">this is para 4</p>
+
+
+
+
+</body>
+</html>

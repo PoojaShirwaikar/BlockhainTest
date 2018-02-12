@@ -1,0 +1,6 @@
+package com.tienda.bean;
+
+public class User {
+	private int userId;
+
+}

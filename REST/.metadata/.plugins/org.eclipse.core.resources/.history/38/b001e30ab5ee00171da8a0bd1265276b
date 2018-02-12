@@ -1,0 +1,7 @@
+package com.tienda.bean;
+
+public class Product {
+	private int produvtId;
+	private String code, name, description;
+	private int price;
+}

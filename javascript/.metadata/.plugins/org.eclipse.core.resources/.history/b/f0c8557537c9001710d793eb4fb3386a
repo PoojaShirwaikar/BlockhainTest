@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		$("td").mouseover(function() {
+			var n = $(this).index() + 1;
+			$("td:nth-child(" + n + ")").css('backgroundColor', 'grey');
+
+		});
+		$("td").mouseout(function() {
+			var n = $(this).index() + 1;
+			$("td:nth-child(" + n + ")").css('backgroundColor', 'white');
+
+		});
+
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

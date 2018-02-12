@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML Table</title>
+<style>
+table{
+    border-collapse: separate;
+    width: 100%;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+table.ex1 {
+    table-layout: auto;
+}
+
+table.ex2 {
+    table-layout: fixed;
+}
+</style>
+</head>
+<body>
+<table class="ex1">
+        <tr>
+            <td width="5%">1000000000000000000000000000</td>
+            <td width="95%">10000000</td>
+        </tr>
+    </table>   <br/><br/><br/>
+    <table class="ex2">
+        <tr>
+            <td width="5%">1000000000000000000000000000</td>
+            <td width="95%">10000000</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+package com.psl;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+
+@Aspect
+public class Audience {
+
+	@Pointcut(value = "execution(* com.psl.Performer.perform(..))")
+	public void pc1() {
+	}
+
+	public void takeSeats() {
+		System.out.println("take seats");
+	}
+
+	public void SwitchOffPhones() {
+		System.out.println("switch off phones");
+	}
+
+	public void demandRefund() {
+		System.out.println("Demand refund");
+	}
+
+	public void applaud() {
+		System.out.println("applaud");
+	}
+
+	public void goHome() {
+		System.out.println("return home");
+	}
+
+	public void record(ProceedingJoinPoint jp) {
+		// before
+		System.out.println("take seats");
+		System.out.println("switch off phones");
+		System.out.println("audience start recording");
+
+		// during
+		try {
+			jp.proceed();
+			System.out.println("applaud");
+
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			// e.printStackTrace();
+			System.out.println("Demand refund");
+
+		}
+
+		// after
+		System.out.println("audience stop recording");
+		System.out.println("return home");
+
+	}
+
+}

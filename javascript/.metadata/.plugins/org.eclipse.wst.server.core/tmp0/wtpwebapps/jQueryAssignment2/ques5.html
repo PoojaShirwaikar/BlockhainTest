@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+div {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#click1").click(function() {
+			$("#thediv").animate({
+				width : '200px',
+				height : '300px',
+			}, 5000);
+		})
+
+	});
+</script>
+</head>
+<body>
+	<div id="thediv">the div</div>
+	<button id="click1">click</button>
+</body>
+</html>

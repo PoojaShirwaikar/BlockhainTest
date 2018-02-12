@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+#div1{
+
+}
+</style>
+
+
+</head>
+<body>
+	<div id="div1">drag me</div>
+	<div id="div2">drop here</div>
+
+</body>
+</html>

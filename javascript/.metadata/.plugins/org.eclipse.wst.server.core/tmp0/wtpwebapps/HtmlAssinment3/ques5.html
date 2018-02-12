@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+video{
+width:50%;
+height:30%
+
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#replay1").click(replayHandler);
+
+		function replayHandler() {
+			var video1 = document.getElementById("video1");
+			video1.currentTime = 0;
+		}
+
+		$("#b1").click(function() {
+			var i = $("#video1")[0];
+
+			if (i.requestFullscreen) {
+				i.requestFullscreen();
+			} else if (i.webkitRequestFullscreen) {
+				i.webkitRequestFullscreen();
+			} else if (i.mozRequestFullScreen) {
+				i.mozRequestFullScreen();
+			} else if (i.msRequestFullscreen) {
+				i.msRequestFullscreen();
+			}
+
+		})
+	});
+</script>
+</head>
+
+<body>
+	<video id="video1" src="podcast_teaser.mp4" autoplay></video>
+	<div>
+		<input type="button" id="replay1" value="Replay" />
+		<input type="button" id="b1" value="FullScreen" />
+	</div>
+</body>
+
+</html>

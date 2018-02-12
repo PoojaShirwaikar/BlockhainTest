@@ -1,0 +1,17 @@
+package com.psl.assignment1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class client {
+
+	public static void main(String[] args) {
+		ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
+		Ticket t=(Ticket) context.getBean("ticket");
+		System.out.println();
+	}
+	
+	
+	
+	
+}

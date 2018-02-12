@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #div1 {
+            width:100px;
+            height:100px;
+            padding:05em;
+            background-color:yellow;
+        }
+        #div2 {
+            width:200px;
+            height:200px;
+            padding:05em;
+            background-color:green;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        	$("#div1").draggable();
+        	$("#div2").droppable({
+        		drop:function(event,ui){
+        			$("#div1").find('p').html("Dropped!!!")
+        			.css("fontSize","xx-large");
+        		}
+        	});
+            
+
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+            <p>Drag me Please!</p>
+    </div>
+    <div id="div2">
+        <p>Drop here!</p>
+    </div>
+</body>
+</html>

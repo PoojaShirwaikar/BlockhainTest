@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<style>
+div {
+	width: 250px;
+	height: 190px;
+	background-color: blue;
+}
+.red{
+}
+</style>
+<script>
+	$(function() {
+		$("#start").click(function() {
+			$("div").animate({
+				left : "+=200px"
+			}, 2000).queue(function() {
+				$(this).toggleClass("red").dequeue();
+			})
+
+		})
+	});
+</script>
+</head>
+<body>
+	<div>here</div>
+	<button id="start">start</button>
+	<button id="stop">stop</button>
+
+</body>
+</html>

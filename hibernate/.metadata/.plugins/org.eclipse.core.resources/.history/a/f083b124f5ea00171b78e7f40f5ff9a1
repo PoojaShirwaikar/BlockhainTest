@@ -1,0 +1,9 @@
+package com.app.model;
+
+public class Student {
+	private int rollno;
+	private int std;
+	private String name;
+	private Address addr;
+
+}

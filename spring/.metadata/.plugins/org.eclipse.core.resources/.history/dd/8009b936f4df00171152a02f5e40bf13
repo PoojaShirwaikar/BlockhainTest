@@ -1,0 +1,13 @@
+package com.psl.assignment1;
+
+public class Ticket {
+
+	private Train train;
+	private String cost;
+
+	public Ticket() {
+		System.out.println("default constructor:ticket");
+	}
+	
+
+}

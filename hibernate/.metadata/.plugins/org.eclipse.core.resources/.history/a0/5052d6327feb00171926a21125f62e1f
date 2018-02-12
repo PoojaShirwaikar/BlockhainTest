@@ -1,0 +1,47 @@
+package com.app.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "skill_details")
+public class Skill {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "skill_id")
+	private int id;
+	@Column(name = "skill_name")
+	private String name;
+	@Column(name = "skill_version")
+	private int version;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getVersion() {
+		return version;
+	}
+
+	public void setVersion(double d) {
+		this.version = d;
+	}
+
+}

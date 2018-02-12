@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.psl.demo.DatabaseMetadata&apos; to &apos;DatabaseMetadataDemo&apos;&#x0D;&#x0A;- Original project: &apos;JDBCdemo&apos;&#x0D;&#x0A;- Original element: &apos;com.psl.demo.DatabaseMetadata&apos;&#x0D;&#x0A;- Renamed element: &apos;com.psl.demo.DatabaseMetadataDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DatabaseMetadata&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.psl.demo{DatabaseMetadata.java[DatabaseMetadata" matchStrategy="1" name="DatabaseMetadataDemo" qualified="false" references="true" similarDeclarations="false" stamp="1508737499405" textual="false" version="1.0"/>
+</session>

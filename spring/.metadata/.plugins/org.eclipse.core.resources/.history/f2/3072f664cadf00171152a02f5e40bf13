@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<context:annotation-config></context:annotation-config>
+
+
+	<bean class="com.psl.Employee" id="emp" lazy-init="true">
+		<property name="id" value="1" />
+		<property name="name" value="Pooja" />
+		 <property name="address" ref="address"/>
+	</bean>
+<!-- 
+	<bean class="com.psl.Address" id="address" init-method="abc"
+		destroy-method="pqr" autowire-candidate="true" primary="true">
+		<constructor-arg name="street" value="AbeDeFariaRoad" />
+		<constructor-arg name="city" value="MARGAO" />
+		<constructor-arg name="zip" value="403601" />
+	</bean> -->
+
+	<!--  <bean class="com.psl.Address" id="address123" init-method="abc"
+		destroy-method="pqr" primary="false">
+		<constructor-arg name="street" value="18juneRoad" />
+		<constructor-arg name="city" value="panjim" />
+		<constructor-arg name="zip" value="403601" />
+	</bean>  -->
+
+	<bean class="com.psl.Address2" id="addr2">
+		<property name="landmark" value="ABC"></property>
+
+	</bean>
+
+	<bean class="com.psl.MyProcessor"></bean>
+
+
+</beans>

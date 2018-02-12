@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //base
+    function human(n){
+        this.name=n;
+
+    }
+    
+
+    human.prototype.speak=function(){
+        alert("i speak english");
+    }
+
+
+    human.prototype.introduction=function(){
+        alert("hi, i am "+this.name);
+    }
+
+
+
+    //derived
+    function student(n,sc,cr){
+          human.call(this,n);
+        this.school=sc;
+        this.courses=cr;
+
+      
+       
+    }
+
+
+    student.prototype=new human();
+    student.prototype.constructor=student;
+
+    human.prototype.introduction=function(){
+        return  "hi, my name is "+this.name+" i am from "+this.school+" undergoing "+this.courses;
+
+    }
+
+    student.prototype.takeExams=function(){
+        alert("this is exam time");
+    }
+
+    //  h = new human("john");
+    //  alert(h.introduction());
+
+     stud=new student("JOHN","GEC", "B.E");
+     stud1=new student("pooja","GEC", "B.E");
+
+    alert(stud.introduction());
+    alert(stud1.introduction());
+
+
+    </script>
+
+    
+</body>
+</html>

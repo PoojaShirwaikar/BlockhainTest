@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;JQueryDemo/WebContent/NewFile.html&apos; to &apos;get.html&apos;" description="Rename resource &apos;NewFile.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/NewFile.html" name="get.html" stamp="1510639991497" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;JQueryDemo/WebContent/get.html&apos; to &apos;ajaxget.html&apos;" description="Rename resource &apos;get.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/get.html" name="ajaxget.html" stamp="1510640087332" updateReferences="true"/>
+</session>

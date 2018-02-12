@@ -1,0 +1,25 @@
+package com.psl;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+
+@Aspect
+public class Suggestion {
+	@Pointcut(value = "execution(* com.psl.Shop.buy(..))")
+	public void pc1() {
+	}
+
+	public void suggestion() {
+		System.out.println("table cover");
+		System.out.println("rug");
+	}
+
+	public void addToCart() {
+		System.out.println("sofa fabric added to cart");
+	}
+
+	public void voucher() {
+		System.out.println("VOUCHER: JHNVS978 ");
+	}
+
+}

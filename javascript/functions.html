@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          add(2,3); //hoisting
+        // //function declaration way
+         function add(x,y){
+                     var result=x+y;
+                     alert("hey"+result);
+         }
+
+
+         add(2,3);
+        //function expression syntax
+         var add=function(x,y){
+             var result=x+y;
+                      alert("hello"+result);
+         }
+        
+
+
+        //iife
+        (function(){
+            alert("hello");
+        })();
+
+       
+        </script>
+</body>
+</html>

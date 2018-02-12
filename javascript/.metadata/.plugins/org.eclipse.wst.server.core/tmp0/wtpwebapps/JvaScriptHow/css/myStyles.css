@@ -1,0 +1,33 @@
+header{ height:100px; width:80%; margin:20px; }
+
+header img{ 	width:80%;	height:80%;	float:left; }
+
+#info{ color:blue; font-family:calibri;}
+
+.products{ clear:left; margin:20px; width:60%;}
+
+.product{  width:100%; float:left; border:1px solid black; overflow:auto;}
+
+.product img{ float:left; width:20%;}
+
+.product div{ float:left; word-wrap:normal; width:60%; }
+
+aside{  float:right; width:35%; position:absolute; right:0px; border:1px solid black; overflow:auto; }
+
+.dropzone{  color:blue; text-align:center; }
+
+#cart h2{  color:black; text-align:center;}
+
+#cart p{ margin:10px;}
+
+#cart-content{  overflow:auto; border:1px solid gray; background:lightGray; width:90%; margin:0 auto; }
+
+.btnSelect{  float:left; width:30%; margin:30px; background:yellow; color:blue; font-weight:bold;}
+
+ol{ list-style-type:none; }
+
+footer{ clear:both; }
+
+#qty{ width:50px;}
+
+.checkoutdiv{  clear:left; border:1px solid blue; background:lightGray; }

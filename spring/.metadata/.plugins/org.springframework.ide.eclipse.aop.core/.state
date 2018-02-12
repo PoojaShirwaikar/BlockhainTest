@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="IntermediateSpring">
+<aspect-definition advice-class-name="com.psl.Audience" advice-method-name="applaud(java.lang.String, java.lang.String)" advice-type="AFTER" aspect-end-line-number="7" aspect-name="audience" aspect-start-line-number="7" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/IntermediateSpring/src/bean.xml" pointcut-expression="pc1(song,artist)" proxy-target-class="false">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:IntermediateSpring|3:src/bean.xml|7:beans:5|8:performer:9" bean-file="/IntermediateSpring/src/bean.xml" bean-start-line="9" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/IntermediateSpring/src/bean.xml" source="=IntermediateSpring/src&lt;com.psl{Audience.java[Audience~applaud~QString;~QString;" source-start-line="35" target="=IntermediateSpring/src&lt;com.psl{Performer.java[Performer~perform~QString;~QString;" target-start-line="9"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.psl.Audience" advice-method-name="takeSeats(java.lang.String, java.lang.String)" advice-type="BEFORE" aspect-end-line-number="7" aspect-name="audience" aspect-start-line-number="7" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/IntermediateSpring/src/bean.xml" pointcut-expression="pc1(song ,artist)" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:IntermediateSpring|3:src/bean.xml|7:beans:5|8:performer:9" bean-file="/IntermediateSpring/src/bean.xml" bean-start-line="9" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/IntermediateSpring/src/bean.xml" source="=IntermediateSpring/src&lt;com.psl{Audience.java[Audience~takeSeats~QString;~QString;" source-start-line="18" target="=IntermediateSpring/src&lt;com.psl{Performer.java[Performer~perform~QString;~QString;" target-start-line="9"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="ATM"/>
+<aop-project name="HelloWorld"/>
+<aop-project name="Assignment2"/>
+<aop-project name="IntermediateAssignment2">
+<aspect-definition advice-class-name="com.psl.Suggestion" advice-method-name="record(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="15" aspect-name="suggestion" aspect-start-line-number="14" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/IntermediateAssignment2/src/bean.xml" pointcut-expression="pc1()" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:IntermediateAssignment2|3:src/bean.xml|7:beans:6|8:shop:10" bean-file="/IntermediateAssignment2/src/bean.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/IntermediateAssignment2/src/bean.xml" source="=IntermediateAssignment2/src&lt;com.psl{Suggestion.java[Suggestion~record~QProceedingJoinPoint;" source-start-line="30" target="=IntermediateAssignment2/src&lt;com.psl{Shop.java[Shop~buy" target-start-line="4"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="SpringMVC"/>
+<aop-project name="BloodBank"/>
+<aop-project name="Assignment1"/>
+<aop-project name="IntermediateAssignment1">
+<aspect-definition advice-class-name="com.psl.TicketCollector" advice-method-name="record" advice-type="AROUND" aspect-end-line-number="25" aspect-name="tc" aspect-start-line-number="25" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/IntermediateAssignment1/src/bean.xml" pointcut-expression="execution(* com.psl.Train.trainRunning(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:IntermediateAssignment1|3:src/bean.xml|7:beans:5|8:train:7" bean-file="/IntermediateAssignment1/src/bean.xml" bean-start-line="7" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/IntermediateAssignment1/src/bean.xml" source="=IntermediateAssignment1/src&lt;com.psl{TicketCollector.java[TicketCollector~record~QProceedingJoinPoint;" source-start-line="18" target="=IntermediateAssignment1/src&lt;com.psl{Train.java[Train~trainRunning" target-start-line="4"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="Spring2"/>
+</aop-reference-model>

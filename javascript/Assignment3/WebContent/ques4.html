@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="d" style="padding: 30px;">
+		<button id="b">
+			<img id="i" src='Desert.jpg' style="width: 100px; height: 100px;"></img>
+		</button>
+	</div>
+
+	<script>
+		document.getElementById("d").addEventListener("click", divc, true);
+		document.getElementById("b").addEventListener("click", buttonc, true);
+		document.getElementById("i").addEventListener("click", imagec, true);
+
+		function divc(event) {
+
+			alert("division");
+			event.stopPropagation();
+
+		}
+		function buttonc(event) {
+
+			alert("button");
+		}
+		function imagec(event) {
+
+			alert("image");
+		}
+	</script>
+
+</body>
+</html>

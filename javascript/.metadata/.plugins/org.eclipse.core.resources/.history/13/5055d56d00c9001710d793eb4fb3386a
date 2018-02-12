@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://code.jquery.com/ui/1.7.3/themes/sunny/jquery-ui.css"
+	rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#datepicker1")
+	})
+</script>
+</head>
+<body>
+	Date:
+	<input type="text" id="datepicker1"> Animate:
+	<select id="animate">
+		<option value="show">show(default)</option>
+		<option value="bounce">bounce</option>
+		<option value="clip">"clip"</option>
+		<option value="drop">"drop"</option>
+	</select>
+</body>
+</html>

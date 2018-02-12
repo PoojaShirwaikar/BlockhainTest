@@ -1,0 +1,94 @@
+package com.app.main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+import com.app.model.Employee;
+import com.app.model.Skill;
+
+public class Application {
+
+	public static void main(String[] args) {
+		List<Skill> skill = populateSkills();
+
+		List<Employee> employees = populateEmployee(skill);
+
+		SessionFactory sessionFactory = new Configuration().configure(
+				"hibernate.cfg.xml").buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+
+		for (Skill skills : skill) {
+			session.save(skills);
+		}
+		for (Employee employee : employees) {
+			session.save(employee);
+		}
+
+		session.getTransaction().commit();
+		session.close();
+		sessionFactory.close();
+
+	}
+
+	private static List<Skill> populateSkills() {
+		// TODO Auto-generated method stub
+		List<Skill> skill = new ArrayList<Skill>();
+
+		Skill skill1 = new Skill();
+		skill1.setId(1);
+		skill1.setName("JAVA");
+		skill1.setVersion(1.8);
+
+		Skill skill2 = new Skill();
+		skill2.setId(2);
+		skill2.setName("JAVAScript");
+		skill2.setVersion(5);
+
+		Skill skill3 = new Skill();
+		skill3.setId(3);
+		skill3.setName("Hibernate");
+		skill3.setVersion(5.2);
+
+		return skill;
+	}
+
+	private static List<Employee> populateEmployee(List<Skill> skill) {
+		// TODO Auto-generated method stub
+
+		List<Employee> employees = new ArrayList<Employee>();
+		Employee emp1 = new Employee();
+		// emp1.setId(1);
+		emp1.setName("Rohit");
+
+		// emp1.setAddr(new Address(101, "Bandra", "Mumbai", 1111));
+		// emp1.setHomeaddr(new Address(201, "Bandra", "Mumbai", 1111));
+		emp1.setSkills(skill.get(1));
+		employees.add(emp1);
+
+		Employee emp2 = new Employee();
+		// emp2.setId(2);
+		emp2.setName("Shikhar");
+
+		// emp2.setAddr(new Address(102, "RaceCourse", "Delhi", 2222));
+		// emp2.setHomeaddr(new Address(202, "RaceCourse", "Delhi", 2222));
+		emp2.setSkills("spring,hibernate");
+		employees.add(emp2);
+
+		Employee emp3 = new Employee();
+		// emp3.setId(3);
+		emp3.setName("Ashwin");
+
+		// emp3.setAddr(new Address(103, "Chennai", "Tamil Nadu", 3333));
+		// emp3.setHomeaddr(new Address(203, "Chennai", "Tamil Nadu", 3333));
+
+		emp3.setSkills("Angular4.js,AWS");
+		employees.add(emp3);
+
+		return employees;
+	}
+}

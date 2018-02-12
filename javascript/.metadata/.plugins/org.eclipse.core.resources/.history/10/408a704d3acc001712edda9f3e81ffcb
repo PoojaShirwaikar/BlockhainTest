@@ -1,0 +1,11 @@
+//var i = getElemenetById("#id1").value();
+
+for (var index = 0; index < 10; index++) {
+	var no = index;
+	postMessage(no);
+
+}
+
+/*
+ * postMessage(no);
+ */

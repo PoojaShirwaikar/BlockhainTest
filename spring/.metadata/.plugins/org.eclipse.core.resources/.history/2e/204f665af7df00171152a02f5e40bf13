@@ -1,0 +1,51 @@
+package com.psl.assignment1;
+
+public class Ticket {
+	private String time;
+	private String destination;
+	private String source;
+	private String cost;
+
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
+	}
+
+	public String getDestination() {
+		return destination;
+	}
+
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getCost() {
+		return cost;
+	}
+
+	public void setCost(String cost) {
+		this.cost = cost;
+	}
+
+	@Override
+	public String toString() {
+		return "Ticket [time=" + time + ", destination=" + destination
+				+ ", source=" + source + ", cost=" + cost + "]";
+	}
+
+	Ticket() {
+		System.out.println("ticket default constructor:ticket");
+	}
+
+}

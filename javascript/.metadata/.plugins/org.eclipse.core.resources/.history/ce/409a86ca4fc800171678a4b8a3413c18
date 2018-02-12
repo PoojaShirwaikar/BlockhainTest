@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+
+
+
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function() {
+
+	});
+</script>
+
+
+</head>
+<body>
+	<div id="thediv">the div</div>
+	<button id="slideup">slide up!</button>
+	<button id="slidedown">slide down!</button>
+	<button id="slidetoggle">slide toggle!</button>
+
+</body>
+</html>

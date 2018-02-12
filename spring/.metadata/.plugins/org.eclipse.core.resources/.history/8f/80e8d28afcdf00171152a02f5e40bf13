@@ -1,0 +1,40 @@
+package com.psl.assignment1;
+
+public class Train {
+	private Ticket ticket;
+	private String name;
+
+	public Train(Ticket ticket, String name) {
+		System.out.println("train parametrised constructor");
+		this.ticket = ticket;
+		this.name = name;
+	}
+	
+	
+
+	public Ticket getTicket() {
+		return ticket;
+	}
+
+	public void setTicket(Ticket ticket) {
+		this.ticket = ticket;
+	}
+
+	@Override
+	public String toString() {
+		return "Train [ticket=" + ticket + ", name=" + name + "]";
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Train() {
+		System.out.println("train default constructor");
+	}
+
+}

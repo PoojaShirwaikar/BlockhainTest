@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<script>
+	$(document).ready(function() {
+		//	$("li.a").css("border", "solid 3px red");
+		//$("p,li.b").css("border", "solid 3px red");
+		//$("ul li.b").css("border", "solid 3px red");
+		//$("ul+p").css("border", "solid 3px red");
+		//$("li+li").css("border", "solid 3px red");
+		//$("ul~p").css("border", "solid 3px red");
+
+		$("#para3").css("border", "solid 2px yellow").css("color", "red");
+
+	});
+</script>
+</head>
+<body>
+	<p>before</p>
+
+
+	<ul id="list1">
+		<li class="a">Coffee</li>
+		<li class="a">Tea</li>
+		<li class="b">Milk</li>
+		<li class="b">Water</li>
+	</ul>
+
+	<p class="a">Para1</p>
+	<p class="b">Para2</p>
+	<p id="para3" class="b">Para3</p>
+	<p class="b">Para4</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function() {
+		var object1 = {
+			apple : 0,
+			banana : {
+				weight : 52,
+				price : 100
+			},
+			cherry : 97
+		};
+		var object2 = {
+			banana : {
+				price : 200
+			},
+			durian : 100
+		};
+
+		$.extend(object1, object2);
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

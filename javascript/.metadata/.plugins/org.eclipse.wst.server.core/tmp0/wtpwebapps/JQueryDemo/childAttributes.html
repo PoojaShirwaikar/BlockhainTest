@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+
+		//$("*:contains(3)").css("border", "5px solid green");
+		//$("p:parent").css("border", "5px solid green");
+		//$("p:empty").css("border", "5px solid green");
+		//$("ul li:nth-child(2n)").css("border", "5px solid green");
+		//	$("ul li:first-child").css("border", "5px solid green");
+		//$("div:visible").css("border", "5px solid green");
+		$("button").click(function() {
+			$("div:hidden").css("border", "5px solid blue").show();
+		});
+
+	});
+</script>
+</head>
+<body>
+	<button>click here</button>
+
+	<div>visible</div>
+	<div style="display: none">hey there</div>
+	<ul id="list1">
+		<li class="a">Coffee</li>
+		<li class="a">Tea</li>
+		<li class="b">Milk</li>
+		<li class="b">Water</li>
+	</ul>
+
+	<p class="a">Para1</p>
+	<p class="b">Para2</p>
+	<p id="para3" class="b">Para3</p>
+	<p class="b"></p>
+</body>
+</html>

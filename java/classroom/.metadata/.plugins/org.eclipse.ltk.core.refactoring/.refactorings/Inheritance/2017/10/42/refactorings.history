@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Employee.java&apos; to &apos;WildCardDemo/src/com.psl.vehicle&apos;&#x0D;&#x0A;- Original project: &apos;Inheritance&apos;&#x0D;&#x0A;- Destination element: &apos;WildCardDemo/src/com.psl.vehicle&apos;&#x0D;&#x0A;- Original element: &apos;com.psl.employee.Employee.java&apos;" description="Copy compilation unit" destination="=WildCardDemo/src&lt;com.psl.vehicle" element1="/src&lt;com.psl.employee{Employee.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1508127873955" units="1" version="1.0"/>
+</session>

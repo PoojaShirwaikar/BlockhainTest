@@ -1,0 +1,17 @@
+package com.psl.client;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.psl.service.EmployeeService;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				"beansconfig.xml");
+
+		Employee e = context.getBean("service", EmployeeService.class);
+	}
+
+}

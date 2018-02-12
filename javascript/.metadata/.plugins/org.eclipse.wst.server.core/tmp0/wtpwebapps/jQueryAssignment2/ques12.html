@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		$("#submit1").click(
+				function(event) {
+					event.preventDefault();
+					var text = "name: " + $("#FirstName").val() + "<br>"
+							+ "address: " + $("#address").val() + "<br>"
+							+ "number of pizzas: " + $("#numberofpizza").val()
+							+ "<br>" + "shape of pizza: "
+							+ $("input[name='shape']:checked").val() + "<br>"
+							+ "Aggrement of terms and conditions: "
+							+ $("input[id='checkbox1']:checked").val();
+
+					$("#div1").html(
+							"<p>You have entered:</p><p>" + text + "</p>");
+
+					//alert(text);
+
+				});
+
+	});
+</script>
+</head>
+<body>
+	<form action="\" method="post">
+
+		<table>
+			<tbody>
+				<tr>
+					<td>First name</td>
+					<td><input id="FirstName" type="text" />
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><textarea id="address" cols="40" name="address"></textarea></td>
+				</tr>
+				<tr>
+					<td>Number of pizzas's</td>
+					<td><input id="numberofpizza" type="number" min=0 />
+				</tr>
+				<tr>
+					<td>shape of pizza</td>
+					<td><input id="square" type="radio" name="shape"
+						value="square" />square</td>
+					<td><input id="circle" type="radio" name="shape"
+						value="circle" />circle</td>
+
+				</tr>
+				<tr>
+					<td><input id="checkbox1" type="checkbox" value="yes" /> <label
+						for="checkbox1">Agree to terms and conditions</lable></td>
+				</tr>
+				<tr>
+					<td><input id="submit1" type="submit" value="submit" /></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</form>
+
+	<div id="div1"></div>
+</body>
+</html>

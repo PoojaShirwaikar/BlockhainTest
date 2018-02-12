@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mypara">paragraph</p>
+    <script>
+    var para = document.getElementById("mypara");
+   // para.onclick=clicked;
+
+   para.addEventListener("click",clicked,true);
+   para.addEventListener("click",clicked12,true);
+
+
+    function clicked(){
+        alert("heyyyyyy");
+    }
+    
+    function clicked12(){
+        alert("byeeeee");
+    }
+    
+    
+    
+    </script>
+
+<!-- <p id="mypara" onclick="alert('hey')">hello</p> -->
+</body>
+</html>

@@ -1,0 +1,45 @@
+package com.app.main;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+import com.app.model.Employee;
+import com.app.model.Student;
+
+public class Application {
+	public static void main(String[] args) {
+		List<Employee> employees = populateEmployee();
+
+		SessionFactory sessionFactory = new Configuration().configure(
+				"hibernate.cfg.xml").buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+
+		// update
+		/*
+		 * Employee emp = (Employee) session.get(Employee.class, 3);
+		 * emp.setSkills("IoT,Node.js"); session.update(emp);
+		 */
+
+		// read
+		// Employee emp = (Employee) session.get(Employee.class, 1);
+
+		// delete
+		// Employee emp = (Employee) session.get(Employee.class, 2);
+		// session.delete(emp);
+
+		// create
+
+		for (Student s : stud) {
+			session.save(s);
+		}
+
+		session.getTransaction().commit();
+		session.close();
+		sessionFactory.close();
+
+	}
+}

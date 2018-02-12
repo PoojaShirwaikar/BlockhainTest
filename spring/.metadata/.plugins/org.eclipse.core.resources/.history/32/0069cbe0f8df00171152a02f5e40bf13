@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.psl.assignment1.Train" id="train" lazy-init="true"
+		scope="prototype" autowire="constructor">
+		<!-- <constructor-arg name="ticket" ref="ticket1"></constructor-arg> -->
+		<constructor-arg name="name" value="RajdhaniExpress"></constructor-arg>
+
+	</bean>
+
+	<bean class="com.psl.assignment1.Ticket" id="ticket">
+		<constructor-arg name="cost" value="20000"></constructor-arg>
+		<constructor-arg name="destination" value="delhi"></constructor-arg>
+		<constructor-arg name="source" value="goa"></constructor-arg>
+		<constructor-arg name="time" value="2:00"></constructor-arg>
+
+
+	</bean>
+
+	<bean class="com.psl.assignment1.Ticket" id="ticket1" parent="ticket">
+	</bean>
+
+	<!-- <bean class="com.psl.assignment1.Ticket" id="ticket2" parent="ticket">
+	</bean> -->
+
+</beans>

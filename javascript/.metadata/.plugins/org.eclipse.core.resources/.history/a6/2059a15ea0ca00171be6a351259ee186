@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		document.getElementById("personaldetails").onclick = getpersonalDetails;
+		document.getElementById("projectdetails").onclick = getprojectDetails;
+		$("#personaldetails").click(function() {
+			/* var pn = $("#empid").val(); */
+		
+			var url = "requestProcessor.jsp";
+			/* var n=$("#name").val();
+			var p=$("#pwd").val(); */
+			$.ajax({
+				type : "POST",
+				url : url,
+				dataType : "JSON",
+				data : {
+					name :$("#name").val(),
+					password: $("#pwd").val()
+				},
+				success : function(response) {
+					console.log(response);
+					
+					// $("#name").val(response.name);
+					  if (response.name == "admin") {
+						alert("you are logged in as administrator");
+					} else {
+						alert("You are not logged in as Administrator. You do not have rights to make any changes in the profile settings");
+					} 
+ 
+				}
+			})
+		})
+		
+		
+		$("#projectdetails").click(function() {
+			/* var pn = $("#empid").val(); */
+		
+			var url = "requestProcessor.jsp";
+			/* var n=$("#name").val();
+			var p=$("#pwd").val(); */
+			$.ajax({
+				type : "POST",
+				url : url,
+				dataType : "JSON",
+				data : {
+					name :$("#name").val(),
+					password: $("#pwd").val()
+				},
+				success : function(response) {
+					console.log(response);
+					
+					// $("#name").val(response.name);
+					  if (response.name == "admin") {
+						alert("you are logged in as administrator");
+					} else {
+						alert("You are not logged in as Administrator. You do not have rights to make any changes in the profile settings");
+					} 
+ 
+				}
+			})
+		})
+		
+		
+		
+	});
+</script>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td><label>name</label></td>
+			<td><input type="text" id="name"></td>
+		</tr>
+
+		<tr>
+			<td><label>last name </label></td>
+			<td><input type="text" id="lastname"></td>
+		</tr>
+		<tr>
+			<td><label>city</label></td>
+			<td><input type="text" id="city"></td>
+		</tr>
+
+		<tr>
+			<td><label>contact number </label></td>
+			<td><input type="text" id="contact"></td>
+		</tr>
+
+		<tr>
+			<td><input type="submit" id="personaldetails"
+				value="get personal details"></td>
+		</tr>
+		<tr>
+			<td><label>project id</label></td>
+			<td><input type="text" id="projectid"></td>
+		</tr>
+
+		<tr>
+			<td><label>project location </label></td>
+			<td><input type="text" id="projectlocation"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" id="projectdetails"
+				value="get project details"></td>
+		</tr>
+	</table>
+
+	<script>
+		
+
+		function getpersonalDetails() {
+
+			xml = new XMLHttpRequest();
+			var url = "requestProcessorXML.jsp";
+			xml.open("GET", url, true);
+			xml.onreadystatechange = handleResponse;
+			xml.send();
+		}
+
+		function handleResponse() {
+
+			if (xml.readyState == 4 && xml.status == 200) {
+				var response = xml.responseXML;
+				var x = response.getElementsByTagName("data");
+				var name = x[0].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+				var lastname = x[0].getElementsByTagName("lastname")[0].childNodes[0].nodeValue;
+				var city = x[0].getElementsByTagName("city")[0].childNodes[0].nodeValue;
+				var contact = x[0].getElementsByTagName("contact")[0].childNodes[0].nodeValue;
+
+				document.getElementById('name').value = name;
+				document.getElementById('lastname').value = lastname;
+				document.getElementById('city').value = city;
+				document.getElementById('contact').value = contact;
+
+			}
+
+		}
+
+		function getprojectDetails() {
+
+			xml = new XMLHttpRequest();
+			var url = "requestProcessorJSON.jsp";
+			xml.open("GET", url, true);
+			xml.onreadystatechange = handleResponse1;
+			xml.send();
+		}
+
+		function handleResponse1() {
+
+			if (xml.readyState == 4 && xml.status == 200) {
+				var response = JSON.parse(xml.responseText);
+
+				document.getElementById('projectid').value = response.projectid;
+				document.getElementById('projectlocation').value = response.projectlocation;
+			}
+
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		
+			/* var pn = $("#empid").val(); */
+			var url = "requestProcessor.jsp";
+			$.ajax({
+				type : "POST",
+				url : url,
+				dataType : "text",
+				data : {
+					empid : $("#empid").val()
+				},
+				success : function(response) {
+					console.log(response);
+					 if (response == "admin") {
+						alert("you are logged in as administrator");
+					} else {
+						alert("You are not logged in as Administrator. You do not have rights to make any changes in the profile settings");
+					} 
+
+				}
+			})
+		
+	});
+</script>
+</head>
+<body>
+		<table>
+		<tr>
+			<td><label>username</label></td>
+			<td><input type="text" id="name"></td>
+		</tr>
+
+		<tr>
+			<td><label>password </label></td>
+			<td><input type="text" id="pwd"></td>
+		</tr>
+
+		<tr>
+			<td><input type="submit" id="submits" value="submit"></td>
+		</tr>
+	</table>
+
+	
+</body>
+</html>

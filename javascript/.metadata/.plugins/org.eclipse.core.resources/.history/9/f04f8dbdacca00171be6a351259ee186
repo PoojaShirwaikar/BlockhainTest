@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		$("#personaldetails").click(function() {
+			var n = $("#name").val();
+			var url = "requestProcessorXML.jsp?name="+n;
+			$.ajax({
+				type : "GET",
+				url : url,
+				dataType : "XML",
+				success : function(response) {
+					console.log(response);
+				
+					 var x=response.getElementsByTagName("data")[0];
+
+				 	$("#name").val(x.childNodes[0].textContent);
+					$("#lastname").val(x.childNodes[1].textContent);
+					$("#city").val(x.childNodes[2].textContent);
+					$("#contact").val(x.childNodes[3].textContent);
+ 
+				}
+			})
+		})
+		
+		
+		$("#projectdetails").click(function() {
+			var pid = $("#projectid").val();
+			var url = "requestProcessorJSON.jsp?projectid="+pid;
+			$.ajax({
+				type : "GET",
+				url : url,
+				dataType : "XML",
+				success : function(response) {
+					console.log(response);
+				
+					 var x=response.getElementsByTagName("data")[0];
+
+				 	$("#name").val(x.childNodes[0].textContent);
+					$("#lastname").val(x.childNodes[1].textContent);
+					$("#city").val(x.childNodes[2].textContent);
+					$("#contact").val(x.childNodes[3].textContent);
+ 
+				}
+			})
+		})
+		
+		
+		
+	});
+</script>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td><label>name</label></td>
+			<td><input type="text" id="name"></td>
+		</tr>
+
+		<tr>
+			<td><label>last name </label></td>
+			<td><input type="text" id="lastname"></td>
+		</tr>
+		<tr>
+			<td><label>city</label></td>
+			<td><input type="text" id="city"></td>
+		</tr>
+
+		<tr>
+			<td><label>contact number </label></td>
+			<td><input type="text" id="contact"></td>
+		</tr>
+
+		<tr>
+			<td><input type="submit" id="personaldetails"
+				value="get personal details"></td>
+		</tr>
+		<tr>
+			<td><label>project id</label></td>
+			<td><input type="text" id="projectid"></td>
+		</tr>
+
+		<tr>
+			<td><label>project location </label></td>
+			<td><input type="text" id="projectlocation"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" id="projectdetails"
+				value="get project details"></td>
+		</tr>
+	</table>
+
+	<script>
+		
+
+		function getpersonalDetails() {
+
+			xml = new XMLHttpRequest();
+			var url = "requestProcessorXML.jsp";
+			xml.open("GET", url, true);
+			xml.onreadystatechange = handleResponse;
+			xml.send();
+		}
+
+		function handleResponse() {
+
+			if (xml.readyState == 4 && xml.status == 200) {
+				var response = xml.responseXML;
+				var x = response.getElementsByTagName("data");
+				var name = x[0].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+				var lastname = x[0].getElementsByTagName("lastname")[0].childNodes[0].nodeValue;
+				var city = x[0].getElementsByTagName("city")[0].childNodes[0].nodeValue;
+				var contact = x[0].getElementsByTagName("contact")[0].childNodes[0].nodeValue;
+
+				document.getElementById('name').value = name;
+				document.getElementById('lastname').value = lastname;
+				document.getElementById('city').value = city;
+				document.getElementById('contact').value = contact;
+
+			}
+
+		}
+
+		function getprojectDetails() {
+
+			xml = new XMLHttpRequest();
+			var url = "requestProcessorJSON.jsp";
+			xml.open("GET", url, true);
+			xml.onreadystatechange = handleResponse1;
+			xml.send();
+		}
+
+		function handleResponse1() {
+
+			if (xml.readyState == 4 && xml.status == 200) {
+				var response = JSON.parse(xml.responseText);
+
+				document.getElementById('projectid').value = response.projectid;
+				document.getElementById('projectlocation').value = response.projectlocation;
+			}
+
+		}
+	</script>
+</body>
+</html>

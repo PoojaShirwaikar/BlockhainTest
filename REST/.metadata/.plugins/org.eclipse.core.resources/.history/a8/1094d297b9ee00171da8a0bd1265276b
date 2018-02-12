@@ -1,0 +1,17 @@
+package com.tienda.service;
+
+import org.apache.tomcat.jdbc.pool.DataSource;
+
+import com.tienda.bean.User;
+import com.tienda.util.UserNotFoundException;
+
+public class TiendaService {
+	public User getUserDetails(String username) throws UserNotFoundException {
+		return new DataStore().getUser(username);
+	}
+
+	public User getProductDetails(String username) throws UserNotFoundException {
+		return new DataStore().getProduct(username);
+	}
+
+}

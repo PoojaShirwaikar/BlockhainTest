@@ -1,0 +1,19 @@
+package com.psl.ques2;
+
+
+public class Thread100 implements Runnable{
+
+	public Thread100() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+
+		Thread100 obj = new Thread100();
+		Thread t1 = new Thread(obj, "one");
+
+		t1.start();
+	}
+
+
+}

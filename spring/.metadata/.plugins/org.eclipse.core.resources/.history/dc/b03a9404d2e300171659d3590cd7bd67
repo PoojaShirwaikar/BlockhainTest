@@ -1,0 +1,40 @@
+package com.psl.dao;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.psl.beans.BloodBank;
+
+@Repository
+public class BloodBankDAOImpl implements IBloodBankDAO {
+	@Autowired
+	private JdbcTemplate template;
+
+	@Override
+	public void createDonor(BloodBank d) {
+		// TODO Auto-generated method stub
+		template.update("insert into donor values(" + d.getId() + ",'"
+				+ d.getName() + "','" + d.getBlood_grp() + "')");
+
+	}
+
+	@Override
+	public List<BloodBank> getAllDonors() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateDonor(int id, String name, String blood_grp) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteDonor(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

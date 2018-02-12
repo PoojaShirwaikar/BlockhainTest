@@ -1,0 +1,13 @@
+package com.tienda.resource;
+
+import com.tienda.bean.Wishlist;
+
+public class WishlistResource {
+
+	public Wishlist fetchWishlistForUser(String username) {
+		Wishlist wishlist
+		
+		return wishlist;
+
+	}
+}

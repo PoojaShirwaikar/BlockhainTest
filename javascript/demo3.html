@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div id="div1">
+    <p id="para1">
+        <span id="span1">
+            I am in span
+        </span>
+    </p>
+</div>
+
+
+<script>
+
+var div = document.getElementById("div1");
+div.addEventListener("click",DivClicked,false);
+
+var para = document.getElementById("para1");
+para.addEventListener("click",ParaClicked,false);
+
+var span = document.getElementById("span1");
+span.addEventListener("click",SpanClicked,false);
+
+
+function DivClicked(){
+    alert("div clicked");
+}
+
+function ParaClicked(){
+    alert("para clicked");
+  //  event.stopPropagation();
+}
+
+function SpanClicked(){
+    alert("span clicked");
+    //event.stopImmediatePropagation();
+}
+
+
+</script>
+
+
+
+    
+</body>
+</html>

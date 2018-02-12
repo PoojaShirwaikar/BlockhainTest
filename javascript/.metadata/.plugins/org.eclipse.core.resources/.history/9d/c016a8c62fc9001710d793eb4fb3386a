@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		$("table tr").hover(function() {
+			alert(this.parentNode);
+		})
+
+	});
+</script>
+</head>
+<body>
+	<form action="\" method="post">
+
+		<table>
+			<tbody>
+				<tr>
+					<td>First name</td>
+					<td><input id="FirstName" type="text" />
+				</tr>
+				<tr>
+					<td>last name</td>
+					<td><input id="lastName" type="text" />
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><textarea id="address" cols="40" name="address"></textarea></td>
+				</tr>
+				<tr>
+					<td class="style2">Gender</td>
+					<td><input id="male" type="radio" checked="checked"
+						name="gender" />male</td>
+					<td><input id="female" type="radio" name="gender" />female</td>
+
+				</tr>
+				<tr>
+					<td class="style2">Hobbies</td>
+					<td><input id="checkbox1" type="checkbox" checked="checked" />
+						<lable for="checkbox1">widgets</lable></td>
+					<td><input id="checkbox2" type="checkbox" /> <lable
+							for="checkbox2">hibbity Jibbities</lable></td>
+					<td><input id="checkbox3" type="checkbox" checked="checked" />
+						<lable for="checkbox3">SplashBangers</lable></td>
+					<td><input id="checkbox4" type="checkbox" /> <lable
+							for="checkbox4">whatzits</lable></td>
+				</tr>
+
+
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+package com.psl;
+
+public class Performer {
+
+	public void practice() {
+		System.out.println("performer practices performance");
+	}
+
+	public void perform() {
+		System.out.println("performer performs a song");
+	}
+
+	public void giveAutograph() {
+
+	}
+}

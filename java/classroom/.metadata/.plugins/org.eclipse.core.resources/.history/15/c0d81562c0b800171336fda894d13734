@@ -1,0 +1,20 @@
+package com.psl.ques2;
+
+import com.psl.ques1.Thread1;
+
+public class Thread100 {
+
+	public Thread100() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+
+		Thread1 obj = new Thread1();
+		Thread t1 = new Thread(obj, "one");
+
+		t1.start();
+	}
+
+
+}

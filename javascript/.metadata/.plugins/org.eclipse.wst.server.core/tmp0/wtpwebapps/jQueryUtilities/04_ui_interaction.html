@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            padding: 05em;
+            background-color: yellow;
+        }
+
+        #div2 {
+            width: 200px;
+            height: 200px;
+            padding: 05em;
+            background-color: green;
+        }
+    </style>
+
+    <link href="https://code.jquery.com/ui/1.7.3/themes/sunny/jquery-ui.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        	$("#datePicker1").datepicker();
+        	$("#animate1").change(function(){
+        		$("#datePicker1").datepicker("option", "showAnim", $(this).val());
+        	})
+        	           
+        });
+    </script>
+</head>
+<body>
+   <p>
+       Date:- <input type="text" id="datePicker1" />
+       Animate:-
+       <select id="animate1">
+           <option value="show">Show (default)</option>
+           <option value="bounce">Bounce</option>
+           <option value="clip">Clip</option>
+           <option value="drop">Drop</option>
+       </select>
+   
+
+</body>
+</html>

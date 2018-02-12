@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        var bank= [ 
+        {
+            name: 'JOHN',
+            account: 'Saving',
+            AccountStatus: 'blocked'
+        },
+        {
+            name: 'KATE ',
+            account: 'Current',
+            AccountStatus:'active'
+        },
+        {
+            name: 'MIKE',
+            account:  'Saving', 
+            AccountStatus:'active'
+        }];
+
+
+
+        for (var key in bank) {
+            if (bank[key].AccountStatus=='blocked') {
+                    alert(bank[key].name +" You need to activate your account");
+            }
+            else{
+                alert(bank[key].name +" Your account is active");
+            }
+        }
+
+
+
+
+    
+    </script>
+</body>
+</html>

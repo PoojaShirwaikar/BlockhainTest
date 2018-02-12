@@ -1,0 +1,12 @@
+ var i=getElemenetById("#id1").text;
+ 
+
+
+for (var index = 0; index <i ; index++) {
+        var no=index;
+        postMessage(no);
+
+    }
+
+/*    postMessage(no);
+*/

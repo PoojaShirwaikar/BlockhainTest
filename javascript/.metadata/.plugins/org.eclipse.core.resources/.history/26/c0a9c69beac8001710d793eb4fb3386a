@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<style>
+.m {
+	background: blue;
+}
+
+.main {
+	background: red;
+}
+</style>
+<script>
+	$(function() {
+
+		//$("#divs").css("background", "blue");
+		$("button").click(function(event) {
+			$("#divs").toggleClass("main");
+		})
+	});
+</script>
+</head>
+<body>
+	<div id="divs" class="m">here</div>
+	<button id="toggle">toggle</button>
+</body>
+</html>

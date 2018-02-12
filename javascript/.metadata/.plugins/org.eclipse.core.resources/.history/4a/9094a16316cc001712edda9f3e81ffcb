@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	Enter the limit:
+	<input type="text">
+	<input type="button" value="Start" onclick="GenerateOddNumber()">
+	<input type="button" value="Stop" onclick="GenerateOddNumber()">
+	<p>
+		Odd numbers:
+		<output id="result"></output>
+	</p>
+
+	<script>
+		function GenerateOddNumber() {
+			var worker = new Worker('GenerateOddNumber.js');
+			worker.onmessage = function(event) {
+				document.getElementById("result").innerHTML = event.data;
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.psl.Employee" id="emp" lazy-init="true" autowire="constructor">
+		<constructor-arg name="id" value="1"></constructor-arg>
+		<constructor-arg name="name" value="Pooja"></constructor-arg>
+		<!-- <constructor-arg name="address" ref="address"></constructor-arg> -->
+	</bean>
+
+	<bean class="com.psl.Address" id="address" init-method="abc"
+		destroy-method="pqr" autowire-candidate="true" primary="true">
+		<constructor-arg name="street" value="AbeDeFariaRoad" />
+		<constructor-arg name="city" value="MARGAO" />
+		<constructor-arg name="zip" value="403601" />
+	</bean>
+
+	<bean class="com.psl.Address" id="address123" init-method="abc"
+		destroy-method="pqr" primary="false">
+		<constructor-arg name="street" value="AbeDeFariaRoad" />
+		<constructor-arg name="city" value="MARGAO" />
+		<constructor-arg name="zip" value="403601" />
+	</bean>
+
+	<bean class="com.psl.Address2" id="addr2">
+		<property name="landmark" value="ABC"></property>
+
+	</bean>
+
+	<bean class="com.psl.MyProcessor"></bean>
+
+
+</beans>

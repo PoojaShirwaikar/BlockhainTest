@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	Name:
+	<input id="i1" type="text"/>
+	<button id="b1" onclick="check()">click me</button>
+	<script>
+	function check(){
+		localStorage.setItem('name',$("#i1").val())
+		window.location.href="http://localhost:8080/HTML5/redirect.html";
+	}
+			
+	</script>
+</body>
+</html>

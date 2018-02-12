@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ATM/src/atm-servlet.xml&apos; to &apos;bean.xml&apos;" description="Rename resource &apos;atm-servlet.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/atm-servlet.xml" name="bean.xml" stamp="1513416406352" updateReferences="true"/>
+</session>

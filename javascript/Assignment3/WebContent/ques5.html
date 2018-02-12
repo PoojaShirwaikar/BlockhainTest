@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    .Animation {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: blue;
+    }
+</style>
+</head>
+
+<body>
+    <button onclick="moveLeft()">Click to Start Animation</button>
+    <div id="Animation" class="Animation">Hey there</div>
+    <script>
+        
+        var myStyle = getComputedStyle(document.querySelector(".Animation"))        
+        var endPos = window.screen.width - parseInt(myStyle.width);
+
+        function moveLeft() {
+            var elem = document.getElementById("Animation");
+            var pos = 0;
+            var id = setInterval(animate, 1);
+            function animate() {
+                if (pos == endPos) {
+                    clearInterval(id);
+                    moveRight();
+                } else {
+                    pos++;
+                    elem.style.left = pos + 'px';
+                }
+            }
+        }
+        function moveRight() {
+            var elem = document.getElementById("Animation");
+            var pos = endPos;
+            var id = setInterval(animate, 1);
+            function animate() {
+                if (pos == 0) {
+                    clearInterval(id);
+                    moveLeft();
+                } else {
+                    pos--;
+                    elem.style.left = pos + 'px';
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

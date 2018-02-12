@@ -1,0 +1,11 @@
+package com.psl.assignment1;
+
+public class Ticket {
+
+	private String train;
+	private String time;
+	private String price;
+	private String source;
+	private String destination;
+
+}

@@ -1,0 +1,11 @@
+package com.psl.dao;
+
+public interface IBloodBankDAO {
+	void createDonor(Donor d);
+
+	List<Donor> getAllDonors();
+
+	void updateDonor(int id, String name, String blood_grp);
+
+	void deleteDonor(int id);
+}

@@ -1,0 +1,537 @@
+
+Nov 09, 2017 11:14:15.63 NEW SESSION
+Nov 09, 2017 11:14:15.63 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 11:14:15.64 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 11:14:15.70 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:35:37.17 [TmFFExt2] observe.quit-application
+Nov 09, 2017 11:36:51.22 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 11:36:51.22 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 11:36:51.33 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:36:53.96 [TmFFExt2] observe.quit-application
+Nov 09, 2017 11:37:47.34 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 11:37:47.34 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 11:37:47.40 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:37:49.94 [TmFFExt2] observe.quit-application
+Nov 09, 2017 11:38:16.51 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 11:38:16.51 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 11:38:16.59 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:39:52.35 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:39:54.39 [TmFFExt2] observe.quit-application
+Nov 09, 2017 11:40:00.57 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 11:40:00.58 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 11:40:00.68 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:40:03.80 [TmFFExt2] observe.quit-application
+Nov 09, 2017 11:41:06.68 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 11:41:06.70 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 11:41:06.79 [TmFFExt2] observe.toplevel-window-ready: readConfig
+
+Nov 09, 2017 11:45:19.40 NEW SESSION
+Nov 09, 2017 11:45:19.40 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 11:45:19.41 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 11:45:19.47 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:58:42.20 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:58:43.91 [TmFFExt2] observe.quit-application
+Nov 09, 2017 11:58:43.92 TypeError: this._toolboxes is undefined: @resource:///modules/devtools/gDevTools.jsm:192
+Nov 09, 2017 11:58:43.93 @resource:///modules/devtools/EventEmitter.jsm:56
+Nov 09, 2017 11:58:43.96 EventEmitter_emit@resource:///modules/devtools/EventEmitter.jsm:100
+Nov 09, 2017 11:58:43.97 @resource://gre/modules/devtools/Toolbox.jsm:668
+Nov 09, 2017 11:58:43.97 effort@resource://gre/modules/commonjs/promise/core.js:53
+Nov 09, 2017 11:58:43.97 resolveDeferred@resource://gre/modules/commonjs/promise/core.js:125
+Nov 09, 2017 11:58:43.98 then@resource://gre/modules/commonjs/promise/core.js:34
+Nov 09, 2017 11:58:43.98 resolve@resource://gre/modules/commonjs/promise/core.js:167
+Nov 09, 2017 11:58:43.98 resolveDeferred@resource://gre/modules/commonjs/promise/core.js:125
+Nov 09, 2017 11:58:43.99 effort@resource://gre/modules/commonjs/promise/core.js:53
+Nov 09, 2017 11:58:43.99 resolveDeferred@resource://gre/modules/commonjs/promise/core.js:125
+Nov 09, 2017 11:58:43.99 then@resource://gre/modules/commonjs/promise/core.js:34
+Nov 09, 2017 11:58:44.00 then@resource://gre/modules/commonjs/promise/core.js:138
+Nov 09, 2017 11:58:44.00 resolve@resource://gre/modules/commonjs/promise/core.js:167
+Nov 09, 2017 11:58:44.00 resolveDeferred@resource://gre/modules/commonjs/promise/core.js:125
+Nov 09, 2017 11:58:44.00 effort@resource://gre/modules/commonjs/promise/core.js:53
+Nov 09, 2017 11:58:44.01 resolveDeferred@resource://gre/modules/commonjs/promise/core.js:125
+Nov 09, 2017 11:58:44.01 then@resource://gre/modules/commonjs/promise/core.js:34
+Nov 09, 2017 11:58:44.01 resolve@resource://gre/modules/commonjs/promise/core.js:167
+Nov 09, 2017 11:58:44.02 resolveDeferred@resource://gre/modules/commonjs/promise/core.js:125
+Nov 09, 2017 11:58:44.02 effort@resource://gre/modules/commonjs/promise/core.js:53
+Nov 09, 2017 11:58:44.02 resolveDeferred@resource://gre/modules/commonjs/promise/core.js:125
+Nov 09, 2017 11:58:44.03 then@resource://gre/modules/commonjs/promise/core.js:34
+Nov 09, 2017 11:58:44.03 resolve@resource://gre/modules/commonjs/promise/core.js:167
+Nov 09, 2017 11:58:44.04 _onWebConsoleClose@resource://gre/modules/WebConsolePanel.jsm:84
+Nov 09, 2017 11:58:44.04 @resource://gre/modules/HUDService.jsm:142
+Nov 09, 2017 11:58:44.07 WC_onDestroyUI@resource://gre/modules/HUDService.jsm:581
+Nov 09, 2017 11:58:44.07 @chrome://browser/content/devtools/webconsole.js:4451
+Nov 09, 2017 11:58:44.07 @resource://gre/modules/devtools/dbg-client.jsm:247
+Nov 09, 2017 11:58:44.08 @resource://gre/modules/devtools/dbg-client.jsm:88
+Nov 09, 2017 11:58:44.08 EV_notify@resource://gre/modules/devtools/dbg-client.jsm:145
+Nov 09, 2017 11:58:44.09 DC_onClosed@resource://gre/modules/devtools/dbg-client.jsm:512
+Nov 09, 2017 11:58:44.09 LDT_close@chrome://global/content/devtools/dbg-transport.js:231
+Nov 09, 2017 11:58:44.10 LDT_close@chrome://global/content/devtools/dbg-transport.js:229
+Nov 09, 2017 11:58:44.10 LDT_close@chrome://global/content/devtools/dbg-transport.js:229
+Nov 09, 2017 11:58:44.10 _closeTransport@resource://gre/modules/devtools/dbg-client.jsm:252
+Nov 09, 2017 11:58:44.11 @resource://gre/modules/devtools/dbg-client.jsm:549
+Nov 09, 2017 11:58:44.11 DC_onPacket@resource://gre/modules/devtools/dbg-client.jsm:494
+Nov 09, 2017 11:58:44.11 @chrome://global/content/devtools/dbg-transport.js:212
+Nov 09, 2017 11:58:44.12 
+Nov 09, 2017 11:58:48.55 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 11:58:48.56 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 11:58:48.66 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 11:59:39.55 [TmFFExt2] observe.quit-application
+Nov 09, 2017 12:00:30.09 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 12:00:30.10 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 12:00:30.21 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 12:07:43.80 [TmFFExt2] observe.quit-application
+Nov 09, 2017 12:10:18.85 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 12:10:18.86 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 12:10:18.92 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 12:26:15.91 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 12:26:17.11 [TmFFExt2] observe.quit-application
+Nov 09, 2017 12:26:20.14 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 12:26:20.15 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 12:26:20.28 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 12:57:17.16 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 12:57:18.98 [TmFFExt2] observe.quit-application
+Nov 09, 2017 13:42:09.51 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 13:42:09.52 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 13:42:09.62 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 13:42:14.55 [TmFFExt2] observe.quit-application
+Nov 09, 2017 14:18:40.21 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 14:18:40.21 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 14:18:40.27 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 14:18:59.87 [TmFFExt2] observe.quit-application
+Nov 09, 2017 15:23:07.31 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 15:23:07.32 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 15:23:07.43 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 15:23:11.55 [TmFFExt2] observe.quit-application
+Nov 09, 2017 15:23:18.62 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 15:23:18.63 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 15:23:18.69 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 15:23:22.03 [TmFFExt2] observe.quit-application
+Nov 09, 2017 15:23:34.40 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 15:23:34.41 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 15:23:34.48 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 15:24:02.36 [TmFFExt2] observe.quit-application
+Nov 09, 2017 17:28:02.94 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 17:28:02.95 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 17:28:03.01 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 17:28:15.89 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 17:28:30.89 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 17:28:33.79 [TmFFExt2] observe.quit-application
+Nov 09, 2017 17:28:38.94 [TmFFExt2] observe.profile-after-change
+Nov 09, 2017 17:28:38.95 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 09, 2017 17:28:39.02 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 09, 2017 17:28:48.28 [TmFFExt2] observe.quit-application
+
+Nov 10, 2017 08:23:38.95 NEW SESSION
+Nov 10, 2017 08:23:38.95 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 08:23:38.96 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 08:23:39.02 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 08:23:43.93 [TmFFExt2] observe.quit-application
+Nov 10, 2017 08:23:49.09 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 08:23:49.10 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 08:23:49.15 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 08:25:04.73 [TmFFExt2] observe.quit-application
+Nov 10, 2017 09:10:58.35 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 09:10:58.35 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 09:10:58.41 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 09:11:14.97 [TmFFExt2] observe.quit-application
+Nov 10, 2017 09:20:49.14 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 09:20:49.16 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 09:20:49.29 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 09:20:55.56 [TmFFExt2] observe.quit-application
+Nov 10, 2017 11:06:04.80 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 11:06:04.81 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 11:06:04.89 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 11:06:39.51 [TmFFExt2] observe.quit-application
+Nov 10, 2017 11:26:40.49 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 11:26:40.49 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 11:26:40.55 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 11:26:53.09 [TmFFExt2] observe.quit-application
+Nov 10, 2017 11:32:30.30 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 11:32:30.31 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 11:32:30.41 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 11:32:38.37 [TmFFExt2] observe.quit-application
+Nov 10, 2017 13:16:37.53 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 13:16:37.54 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 13:16:37.62 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 13:16:42.56 [TmFFExt2] observe.quit-application
+Nov 10, 2017 13:22:53.81 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 13:22:53.81 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 13:22:53.88 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 13:22:58.60 [TmFFExt2] observe.quit-application
+Nov 10, 2017 13:41:34.82 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 13:41:34.83 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 13:41:34.89 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 13:41:38.90 [TmFFExt2] observe.quit-application
+Nov 10, 2017 13:46:19.41 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 13:46:19.42 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 13:46:19.53 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 13:46:23.58 [TmFFExt2] observe.quit-application
+Nov 10, 2017 14:07:24.13 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 14:07:24.13 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 14:07:24.20 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 14:07:27.92 [TmFFExt2] observe.quit-application
+Nov 10, 2017 15:24:42.38 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 15:24:42.39 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 15:24:42.50 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 15:24:46.06 [TmFFExt2] observe.quit-application
+Nov 10, 2017 15:52:41.27 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 15:52:41.27 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 15:52:41.38 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 15:53:55.46 [TmFFExt2] observe.quit-application
+Nov 10, 2017 17:13:03.66 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 17:13:03.67 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 17:13:03.77 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 17:13:07.95 [TmFFExt2] observe.quit-application
+Nov 10, 2017 17:47:38.98 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 17:47:38.99 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 17:47:39.05 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 17:47:47.57 [TmFFExt2] observe.quit-application
+Nov 10, 2017 17:47:59.09 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 17:47:59.10 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 17:47:59.15 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 17:48:02.91 [TmFFExt2] observe.quit-application
+Nov 10, 2017 18:22:03.91 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 18:22:03.91 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 18:22:03.97 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 18:22:12.45 [TmFFExt2] observe.quit-application
+Nov 10, 2017 19:09:42.00 [TmFFExt2] observe.profile-after-change
+Nov 10, 2017 19:09:42.01 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 10, 2017 19:09:42.12 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 10, 2017 19:09:48.38 [TmFFExt2] observe.quit-application
+
+Nov 11, 2017 08:37:48.81 NEW SESSION
+Nov 11, 2017 08:37:48.81 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 08:37:48.82 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 08:37:48.92 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 08:37:52.52 [TmFFExt2] observe.quit-application
+Nov 11, 2017 08:43:36.65 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 08:43:36.66 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 08:43:36.71 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 08:43:42.20 [TmFFExt2] observe.quit-application
+Nov 11, 2017 09:09:51.63 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 09:09:51.65 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 09:09:51.71 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 09:10:00.17 [TmFFExt2] observe.quit-application
+Nov 11, 2017 09:53:59.67 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 09:53:59.68 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 09:53:59.74 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 09:54:04.64 [TmFFExt2] observe.quit-application
+
+Nov 11, 2017 14:54:29.57 NEW SESSION
+Nov 11, 2017 14:54:29.57 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 14:54:29.60 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 14:54:29.69 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 14:54:34.10 [TmFFExt2] observe.quit-application
+Nov 11, 2017 15:39:02.57 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 15:39:02.58 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 15:39:02.68 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 15:39:08.57 [TmFFExt2] observe.quit-application
+Nov 11, 2017 16:00:15.95 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 16:00:15.96 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 16:00:16.06 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 16:00:20.03 [TmFFExt2] observe.quit-application
+Nov 11, 2017 16:23:44.56 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 16:23:44.57 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 16:23:44.68 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 16:23:59.69 [TmFFExt2] observe.quit-application
+Nov 11, 2017 16:46:30.89 [TmFFExt2] observe.profile-after-change
+Nov 11, 2017 16:46:30.90 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 11, 2017 16:46:31.01 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 11, 2017 16:46:38.84 [TmFFExt2] observe.quit-application
+
+Nov 13, 2017 09:58:32.17 NEW SESSION
+Nov 13, 2017 09:58:32.17 [TmFFExt2] observe.profile-after-change
+Nov 13, 2017 09:58:32.19 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 13, 2017 09:58:32.26 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 13, 2017 09:58:36.35 [TmFFExt2] observe.quit-application
+Nov 13, 2017 09:59:17.66 [TmFFExt2] observe.profile-after-change
+Nov 13, 2017 09:59:17.66 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 13, 2017 09:59:17.73 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 13, 2017 09:59:22.01 [TmFFExt2] observe.quit-application
+Nov 13, 2017 11:42:38.72 [TmFFExt2] observe.profile-after-change
+Nov 13, 2017 11:42:38.73 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 13, 2017 11:42:38.84 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 13, 2017 11:42:45.45 [TmFFExt2] observe.quit-application
+Nov 13, 2017 13:28:56.59 [TmFFExt2] observe.profile-after-change
+Nov 13, 2017 13:28:56.59 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 13, 2017 13:28:56.68 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 13, 2017 13:29:00.63 [TmFFExt2] observe.quit-application
+Nov 13, 2017 14:20:35.98 [TmFFExt2] observe.profile-after-change
+Nov 13, 2017 14:20:35.99 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 13, 2017 14:20:36.11 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 13, 2017 14:20:39.64 [TmFFExt2] observe.quit-application
+Nov 13, 2017 14:34:19.56 [TmFFExt2] observe.profile-after-change
+Nov 13, 2017 14:34:19.58 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 13, 2017 14:34:19.65 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 13, 2017 14:34:23.47 [TmFFExt2] observe.quit-application
+Nov 13, 2017 15:02:49.08 [TmFFExt2] observe.profile-after-change
+Nov 13, 2017 15:02:49.09 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 13, 2017 15:02:49.20 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 13, 2017 15:02:53.38 [TmFFExt2] observe.quit-application
+
+Nov 14, 2017 08:25:49.09 NEW SESSION
+Nov 14, 2017 08:25:49.09 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 08:25:49.17 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 08:25:49.42 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 08:25:55.42 [TmFFExt2] observe.quit-application
+Nov 14, 2017 08:26:00.37 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 08:26:00.37 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 08:26:00.44 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 08:26:03.06 [TmFFExt2] observe.quit-application
+Nov 14, 2017 08:26:39.64 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 08:26:39.66 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 08:26:39.77 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 08:26:44.33 [TmFFExt2] observe.quit-application
+Nov 14, 2017 08:27:01.00 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 08:27:01.01 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 08:27:01.13 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 08:27:05.30 [TmFFExt2] observe.quit-application
+Nov 14, 2017 08:56:34.22 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 08:56:34.23 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 08:56:34.34 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 08:56:38.03 [TmFFExt2] observe.quit-application
+Nov 14, 2017 09:35:27.65 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 09:35:27.67 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 09:35:27.74 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 09:35:32.05 [TmFFExt2] observe.quit-application
+Nov 14, 2017 09:56:54.72 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 09:56:54.73 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 09:56:54.85 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 09:56:58.33 [TmFFExt2] observe.quit-application
+Nov 14, 2017 10:42:30.66 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 10:42:30.68 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 10:42:30.78 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 10:42:34.68 [TmFFExt2] observe.quit-application
+Nov 14, 2017 11:16:29.77 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 11:16:29.81 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 11:16:29.91 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 11:16:33.68 [TmFFExt2] observe.quit-application
+Nov 14, 2017 11:25:40.14 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 11:25:40.16 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 11:25:40.27 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 11:25:43.84 [TmFFExt2] observe.quit-application
+Nov 14, 2017 11:54:06.57 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 11:54:06.59 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 11:54:06.69 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 11:54:12.67 [TmFFExt2] observe.quit-application
+Nov 14, 2017 12:08:53.85 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 12:08:53.87 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 12:08:53.99 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 12:08:57.21 [TmFFExt2] observe.quit-application
+Nov 14, 2017 12:20:37.36 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 12:20:37.37 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 12:20:37.43 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 12:20:40.36 [TmFFExt2] observe.quit-application
+Nov 14, 2017 12:49:13.54 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 12:49:13.55 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 12:49:13.61 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 12:49:16.79 [TmFFExt2] observe.quit-application
+Nov 14, 2017 14:00:06.56 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 14:00:06.58 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 14:00:06.67 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 14:00:11.76 [TmFFExt2] observe.quit-application
+Nov 14, 2017 14:04:12.84 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 14:04:12.86 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 14:04:12.98 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 14:04:17.08 [TmFFExt2] observe.quit-application
+Nov 14, 2017 14:06:06.89 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 14:06:06.90 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 14:06:06.96 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 14:06:10.82 [TmFFExt2] observe.quit-application
+Nov 14, 2017 14:09:41.89 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 14:09:41.90 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 14:09:41.96 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 14:09:45.67 [TmFFExt2] observe.quit-application
+Nov 14, 2017 14:10:28.64 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 14:10:28.64 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 14:10:28.70 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 14:10:32.70 [TmFFExt2] observe.quit-application
+Nov 14, 2017 14:11:25.96 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 14:11:25.97 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 14:11:26.05 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 14:11:28.82 [TmFFExt2] observe.quit-application
+Nov 14, 2017 14:13:27.91 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 14:13:27.92 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 14:13:28.03 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 14:13:31.56 [TmFFExt2] observe.quit-application
+Nov 14, 2017 14:26:38.91 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 14:26:38.91 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 14:26:38.98 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 14:26:42.74 [TmFFExt2] observe.quit-application
+Nov 14, 2017 16:43:35.38 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 16:43:35.39 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 16:43:35.46 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 16:43:39.39 [TmFFExt2] observe.quit-application
+Nov 14, 2017 16:49:32.00 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 16:49:32.01 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 16:49:32.09 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 16:49:35.04 [TmFFExt2] observe.quit-application
+Nov 14, 2017 17:05:59.30 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 17:05:59.31 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 17:05:59.42 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 17:06:03.36 [TmFFExt2] observe.quit-application
+Nov 14, 2017 18:05:25.96 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 18:05:25.96 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 18:05:26.04 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 18:05:30.42 [TmFFExt2] observe.quit-application
+Nov 14, 2017 18:17:00.68 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 18:17:00.69 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 18:17:00.75 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 18:17:03.66 [TmFFExt2] observe.quit-application
+Nov 14, 2017 18:52:59.48 [TmFFExt2] observe.profile-after-change
+Nov 14, 2017 18:52:59.48 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 14, 2017 18:52:59.58 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 14, 2017 18:53:03.34 [TmFFExt2] observe.quit-application
+
+Nov 15, 2017 17:40:27.40 NEW SESSION
+Nov 15, 2017 17:40:27.40 [TmFFExt2] observe.profile-after-change
+Nov 15, 2017 17:40:27.41 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 15, 2017 17:40:27.48 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 15, 2017 17:40:33.24 [TmFFExt2] observe.quit-application
+Nov 15, 2017 17:45:00.46 [TmFFExt2] observe.profile-after-change
+Nov 15, 2017 17:45:00.47 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 15, 2017 17:45:00.57 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 15, 2017 17:45:04.21 [TmFFExt2] observe.quit-application
+Nov 15, 2017 17:48:47.00 [TmFFExt2] observe.profile-after-change
+Nov 15, 2017 17:48:47.01 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 15, 2017 17:48:47.08 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 15, 2017 17:48:51.41 [TmFFExt2] observe.quit-application
+Nov 15, 2017 18:10:04.45 [TmFFExt2] observe.profile-after-change
+Nov 15, 2017 18:10:04.46 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 15, 2017 18:10:04.57 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 15, 2017 18:10:08.42 [TmFFExt2] observe.quit-application
+Nov 15, 2017 18:57:40.85 [TmFFExt2] observe.profile-after-change
+Nov 15, 2017 18:57:40.86 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 15, 2017 18:57:40.96 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 15, 2017 18:57:45.10 [TmFFExt2] observe.quit-application
+Nov 15, 2017 19:14:17.11 [TmFFExt2] observe.profile-after-change
+Nov 15, 2017 19:14:17.12 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 15, 2017 19:14:17.22 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 15, 2017 19:14:20.77 [TmFFExt2] observe.quit-application
+
+Nov 16, 2017 08:31:21.04 NEW SESSION
+Nov 16, 2017 08:31:21.04 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 08:31:21.10 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 08:31:21.44 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 08:31:29.68 [TmFFExt2] observe.quit-application
+Nov 16, 2017 08:31:59.99 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 08:32:00.00 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 08:32:00.11 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 08:32:06.36 [TmFFExt2] observe.quit-application
+Nov 16, 2017 08:34:52.69 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 08:34:52.70 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 08:34:52.77 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 08:34:56.00 [TmFFExt2] observe.quit-application
+Nov 16, 2017 08:37:47.40 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 08:37:47.41 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 08:37:47.50 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 08:37:50.65 [TmFFExt2] observe.quit-application
+Nov 16, 2017 10:11:24.92 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 10:11:24.93 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 10:11:25.02 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 10:11:28.61 [TmFFExt2] observe.quit-application
+Nov 16, 2017 10:46:31.85 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 10:46:31.86 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 10:46:31.92 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 10:46:43.49 [TmFFExt2] observe.quit-application
+Nov 16, 2017 11:09:25.57 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 11:09:25.58 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 11:09:25.67 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 11:09:30.50 [TmFFExt2] observe.quit-application
+Nov 16, 2017 11:13:00.99 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 11:13:00.99 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 11:13:01.09 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 11:13:04.15 [TmFFExt2] observe.quit-application
+Nov 16, 2017 11:31:29.54 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 11:31:29.57 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 11:31:29.64 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 11:31:34.28 [TmFFExt2] observe.quit-application
+Nov 16, 2017 11:56:00.06 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 11:56:00.07 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 11:56:00.18 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 11:56:04.50 [TmFFExt2] observe.quit-application
+Nov 16, 2017 11:56:40.10 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 11:56:40.11 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 11:56:40.20 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 11:56:43.09 [TmFFExt2] observe.quit-application
+Nov 16, 2017 14:26:50.25 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 14:26:50.26 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 14:26:50.35 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 14:26:54.26 [TmFFExt2] observe.quit-application
+Nov 16, 2017 14:27:18.09 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 14:27:18.10 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 14:27:18.21 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 14:27:21.88 [TmFFExt2] observe.quit-application
+Nov 16, 2017 14:54:11.99 [TmFFExt2] observe.profile-after-change
+Nov 16, 2017 14:54:12.00 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 16, 2017 14:54:12.06 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 16, 2017 14:54:16.89 [TmFFExt2] observe.quit-application
+
+Nov 18, 2017 08:45:57.29 NEW SESSION
+Nov 18, 2017 08:45:57.29 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 08:45:57.38 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 08:45:57.59 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 08:46:02.37 [TmFFExt2] observe.quit-application
+Nov 18, 2017 08:48:08.76 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 08:48:08.77 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 08:48:08.88 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 08:48:12.15 [TmFFExt2] observe.quit-application
+Nov 18, 2017 09:18:30.73 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 09:18:30.75 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 09:18:30.82 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 09:18:35.75 [TmFFExt2] observe.quit-application
+Nov 18, 2017 09:21:29.68 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 09:21:29.69 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 09:21:29.76 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 09:21:33.80 [TmFFExt2] observe.quit-application
+Nov 18, 2017 09:28:45.38 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 09:28:45.40 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 09:28:45.46 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 09:28:49.29 [TmFFExt2] observe.quit-application
+Nov 18, 2017 09:36:16.52 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 09:36:16.54 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 09:36:16.61 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 09:36:21.78 [TmFFExt2] observe.quit-application
+Nov 18, 2017 09:41:08.69 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 09:41:08.70 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 09:41:08.82 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 09:41:13.70 [TmFFExt2] observe.quit-application
+Nov 18, 2017 11:21:55.65 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 11:21:55.66 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 11:21:55.77 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 11:21:58.96 [TmFFExt2] observe.quit-application
+Nov 18, 2017 11:29:34.09 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 11:29:34.10 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 11:29:34.17 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 11:29:47.91 [TmFFExt2] observe.quit-application
+Nov 18, 2017 11:41:46.53 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 11:41:46.54 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 11:41:46.60 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 11:41:49.50 [TmFFExt2] observe.quit-application
+Nov 18, 2017 11:55:21.02 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 11:55:21.03 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 11:55:21.09 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 11:55:25.70 [TmFFExt2] observe.quit-application
+Nov 18, 2017 11:55:38.65 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 11:55:38.67 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 11:55:38.77 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 11:55:42.33 [TmFFExt2] observe.quit-application
+Nov 18, 2017 12:16:20.54 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 12:16:20.55 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 12:16:20.65 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 12:16:24.44 [TmFFExt2] observe.quit-application
+Nov 18, 2017 13:57:42.90 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 13:57:42.93 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 13:57:43.04 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 13:57:46.61 [TmFFExt2] observe.quit-application
+Nov 18, 2017 14:39:20.76 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 14:39:21.02 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 14:39:21.35 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 14:39:29.74 [TmFFExt2] observe.quit-application
+Nov 18, 2017 14:41:14.84 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 14:41:14.85 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 14:41:14.96 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 14:41:18.63 [TmFFExt2] observe.quit-application
+Nov 18, 2017 14:57:46.20 [TmFFExt2] observe.profile-after-change
+Nov 18, 2017 14:57:46.21 [TmFFExt2] observe.http-on-modify-request: TmFFExt2 is initialized
+Nov 18, 2017 14:57:46.32 [TmFFExt2] observe.toplevel-window-ready: readConfig
+Nov 18, 2017 14:57:50.43 [TmFFExt2] observe.quit-application

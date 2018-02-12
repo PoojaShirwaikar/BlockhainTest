@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    
+
+    <!-- .trim()  Removes leading and trailing whitespace-->
+    <pre id="original"></pre>
+    <pre id="trimmed"></pre>
+
+      
+    <script>
+        
+        // .trim()
+        $(function () {
+            var str = "         string has lots of spaces before and after          ";
+            $("#original").html("Original String: '" + str + "'");
+            $("#trimmed").html("$.trim()'ed: '" + $.trim(str) + "'");
+        });
+
+        
+    </script>
+</body>
+</html>
+

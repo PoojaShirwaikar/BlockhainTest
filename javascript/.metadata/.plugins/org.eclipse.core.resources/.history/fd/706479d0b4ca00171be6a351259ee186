@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+
+		$("#submit1").click(function() {
+
+			var url = "requestProcessor.jsp";
+			$.ajax({
+				type : "POST",
+				url : url,
+				data : {
+					name : $("#name").val(),
+					pwd : $("#pwd").val()
+				},
+
+				success : function(response) {
+					alert("fygfy")
+					alert(response);
+				}
+			});
+		});
+
+	});
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td><label>username</label></td>
+			<td><input type="text" id="name"></td>
+		</tr>
+
+		<tr>
+			<td><label>password </label></td>
+			<td><input type="text" id="pwd"></td>
+		</tr>
+
+		<tr>
+			<td><input type="submit" id="submit1" value="submit"></td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

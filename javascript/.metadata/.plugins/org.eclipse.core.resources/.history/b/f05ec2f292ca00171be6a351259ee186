@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+	<h1 id="h"></h1>
+	<button id="b2" onclick="check1()">sign out</button>
+
+	<script>
+		var name1 = localStorage.getItem('name');
+		console.log(name1);
+		$("h1").append(" Welcome " + name1);
+
+		function check1() {
+			localStorage.removeItem('name');
+			$("h1").remove();
+			$("h1").append(" Welcome ");
+
+		}
+	</script>
+
+
+
+</body>
+</html>

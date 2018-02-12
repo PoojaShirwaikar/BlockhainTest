@@ -1,0 +1,38 @@
+package com.psl.assignment1;
+
+public class Person {
+	private String pname;
+	private String age;
+	private Ticket ticket;
+
+	public Person(String pname, String age, Ticket ticket) {
+		System.out.println("person parametrised constructor");
+		this.pname = pname;
+		this.age = age;
+		this.ticket = ticket;
+	}
+
+	public String getPname() {
+		return pname;
+	}
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public Ticket getTicket() {
+		return ticket;
+	}
+
+	public void setTicket(Ticket ticket) {
+		this.ticket = ticket;
+	}
+}

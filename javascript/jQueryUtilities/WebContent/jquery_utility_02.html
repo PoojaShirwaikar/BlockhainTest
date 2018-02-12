@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+
+
+    <!-- .now() -->
+    <button id="btn3">Click!</button><br />
+    <div id="div1"></div>
+    <br />
+    <div id="div2"></div>
+    <br />
+    
+    <script>
+      
+
+        // .now()
+        // Return a number representing the current time
+        // following code display a message for the longhand version of the current time using (new Date).getTime() and 
+        // shorthand version using the jQuery.now() jQuery General utility method.
+        // Dates written as numbers, specifies the number of milliseconds since January 1, 1970, 00:00:00.
+        $(function () {
+            $('#btn3').one('click', function () {
+                $('#div1').append((new Date).getTime() + '<br />');
+                $('#div2').append($.now() + '<br />');
+            });
+        });
+
+        
+    </script>
+</body>
+</html>
+

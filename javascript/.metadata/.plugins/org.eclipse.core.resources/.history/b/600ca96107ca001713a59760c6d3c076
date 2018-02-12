@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<nav>
+02
+  <div class="nav-toggle dropdown"><a><a href="https://www.jqueryscript.net/tags.php?/Navigation/">Navigation</a></a></div>
+03
+  <ul>
+04
+    <li><a href="#">Home</a></li>
+05
+    <li><a href="#">Cateroies</a></li>
+06
+    <li class="dropdown"><a>Plugins</a>
+07
+      <ul>
+08
+        <li><a href="http://www.jqueryscript.net/jquery-plugins/">Latest jQuery Plugins</a></li>
+09
+        <li><a href="http://www.jqueryscript.net/popular/">Most Popular Plugins</a></li>
+10
+        <li><a href="http://www.jqueryscript.net/recommended/">Recommended Plugins</a></li>
+11
+      </ul>
+12
+    </li>
+13
+    <li class="dropdown"><a>Links</a>
+14
+      <ul>
+15
+        <li><a href="#">Blog</a></li>
+16
+        <li><a href="#">About</a></li>
+17
+        <li><a href="#">Contact</a></li>
+18
+      </ul>
+19
+    </li>
+20
+    <li><a href="#">What's Hot</a></li>
+21
+    <li class="dropdown"><a>Keep in touch</a>
+22
+      <ul>
+23
+        <li><a href="#">Twitter</a></li>
+24
+        <li><a href="#">Google+</a></li>
+25
+        <li><a href="#"><a href="https://www.jqueryscript.net/tags.php?/Facebook/">Facebook</a></a></li>
+26
+      </ul>
+27
+    </li>
+28
+  </ul>
+29
+</nav>
+
+</body>
+</html>

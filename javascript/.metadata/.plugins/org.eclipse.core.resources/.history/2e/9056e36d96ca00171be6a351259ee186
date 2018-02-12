@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>geolocation with map</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script
+	src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"
+	type="text/javascript">
+	
+</script>
+<style>
+#displaymap {
+	height: 400px;
+	width: 400px;
+	border: solid 2px black
+}
+</style>
+
+</head>
+<body>
+	<div id="info"></div>
+	<div id="errordiv"></div>
+	<div id="displaymap"></div>
+	<script>
+		$(function() {
+			if (navigator.geolocation) {
+				$("#info").html("fetching details");
+				var options = {
+					enableHighAccuracy : false,
+					maximumAge : 0,
+					timeout : 60000
+				}
+			}
+			navigator.geolocation.getCurrentPosition(onSuccess, onError,
+					options);
+
+			function onSuccess() {
+				$("#info").append("latitude: " + position.coords.latitude);
+				$("#info").append("longitude: " + position.coords.longitude);
+				initializeMap(position.coords.latitude,
+						position.coords.longitude);
+
+			}
+
+			function onError() {
+				$("#errordiv").html("Error occured ");
+
+			}
+
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+(function($) {
+	$.fn.colorit = function() {
+		this.css({
+			"color" : "red",
+			"fontSize" : "20pt",
+			"background-color" : "gray"
+		});
+	}
+})(jQuery);

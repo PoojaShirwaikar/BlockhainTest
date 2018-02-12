@@ -1,0 +1,9 @@
+var str="";
+for(var i=2;i<=10;i++){
+	for(var j=1;j<=10;j++){
+		var p=i*j;
+		str=str+p+",";
+	}
+	str=str+"<br>";
+}
+postMessage(str);

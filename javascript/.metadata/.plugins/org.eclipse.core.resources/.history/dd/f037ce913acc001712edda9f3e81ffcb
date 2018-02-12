@@ -1,0 +1,12 @@
+alert("hey");
+for(i = 20; i <= 70; i++){
+	   if((i % 2) == 0){
+	    continue; //if num is odd, skip it.
+	   }
+	   postMessage(no);
+	 }
+
+
+/*
+ * postMessage(no);
+ */

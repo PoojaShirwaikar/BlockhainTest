@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+            function Person(n,loc){
+                this.name=n;  //constructor level properties
+                this.location=loc;
+            }
+            
+
+      
+
+
+        Person.prototype.eat=function(){
+            alert("I like sea food");
+        }
+
+        Person.prototype.introduction=function(){
+        alert("I am "+this.name+" I am from "+this.location);
+        }
+
+
+        function Developer(p){
+           // Person.call(this,n,loc);
+            
+            this.projects=p;  
+       }
+
+
+       Developer.prototype=new Person('John','pune');
+       Developer.prototype.constructor=Developer;
+
+
+       Developer.prototype.takeleave=function(){
+            alert("I am on leave next week");
+        }
+
+        Person.prototype.introduction=function(){
+
+           
+        document.write("I am "+this.name+" I am from "+this.location+" and i am allocated in ");
+
+        for (var index = 0; index < per1.projects.length; index++) {
+           document.write(per1.projects[index]+" ");
+            
+        }
+        }
+
+        var per1 = new Developer(['marketing','hr']);
+        per1.introduction();
+
+
+
+    </script>
+</body>
+</html>

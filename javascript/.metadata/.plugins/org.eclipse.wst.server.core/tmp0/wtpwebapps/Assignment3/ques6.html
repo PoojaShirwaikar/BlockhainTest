@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+<body>
+	<div>
+		<table>
+			<tr>
+				<td><img id="one" src="Desert.jpg" width="200px" height="200px"></td>
+				<td><img id="two" src="Lighthouse.jpg" width="200px"
+					height="200px"></td>
+				<td><img id="three" src="Penguins.jpg" width="200px"
+					height="200px"></td>
+				<td><img id="four" src="Tulips.jpg" width="200px"
+					height="200px"></td>
+				<td>
+					<button>Toggle Transparency</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="div2"></div>
+	<style>
+.adjust {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background: red;
+}
+</style>
+	<script>
+		var p = document.getElementsByTagName("img");
+		for (i = 0; i < p.length; i++) {
+			p[i].addEventListener("click", function() {
+				var l = document.createElement("img");
+				l.setAttribute('src', this.getAttribute("src"));
+				l.setAttribute('class', "adjust");
+				var d = document.getElementById("div2");
+				// alert(d.hasChildNodes);
+				/* if (d.hasChildNodes) {
+					ch = d.childNodes[0];
+					console.log(ch);
+					d.removeChild(ch);
+				} */
+
+				d.appendChild(l);
+			}, true);
+		}
+		var button = document.getElementsByTagName("button");
+		var xx = document.getElementById("div2");
+		button[0].addEventListener("click", function() {
+			if (xx.style.opacity == 1) {
+				xx.style.opacity = 0.5;
+			} else {
+				xx.style.opacity = 1;
+			}
+
+		}, true);
+	</script>
+</body>
+</html>

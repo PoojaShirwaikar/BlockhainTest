@@ -1,0 +1,6 @@
+Customer Id,Customer Name,ISD call duration(sec),ISD per Min,STD call duration(sec),STD per Min,Local call duration(sec),Local per Min
+14411,David,1800,30,2000,3,120000,0.6
+14412,Mark,1510,30,6000,3,150000,0.6
+14413,Paul,0,10,10000,3,420000,0.6
+14414,Dimitri,2200,20,5000,3,70000,0.6
+14415,Jimmi,3000,8,1000,3,180000,0.6

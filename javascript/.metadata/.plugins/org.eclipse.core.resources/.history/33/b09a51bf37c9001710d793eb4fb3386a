@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+
+		$("body").append("<table border='1'></table>");
+
+		$("td").mouseover(function() {
+			var n = $(this).index() + 1;
+			$("td:nth-child(" + n + ")").css('backgroundColor', 'grey');
+
+		});
+		$("td").mouseout(function() {
+			var n = $(this).index() + 1;
+			$("td:nth-child(" + n + ")").css('backgroundColor', 'white');
+
+		});
+
+	});
+</script>
+</head>
+<body>
+	<table id="table1" border=1>
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Address</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>Margao</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>Panajim</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>Jack</td>
+			<td>Samson</td>
+			<td>Mapusa</td>
+			<td>90</td>
+		</tr>
+
+	</table>
+</body>
+</html>

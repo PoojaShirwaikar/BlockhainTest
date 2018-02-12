@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+
+	Enter the limit of odd numbers starting from 1:
+	<input id="id1" type="text">
+	<input type="button" value="Start" onclick="GenerateOddNumber()">
+	<input type="button" value="Stop" onclick="stopWorker()">
+	<p id="para1">
+		Odd numbers:
+		<!-- <output id="result"></output> -->
+	</p>
+
+	<script>
+		function GenerateOddNumber() {
+			var worker = new Worker('GenerateOddNumber.js');
+
+			worker.onmessage = function(event) {
+
+				$("#para1").append = event.data;
+			};
+		}
+
+		function stopWorker() {
+			worker.terminate();
+			worker = undefined;
+		}
+	</script>
+</body>
+</html>

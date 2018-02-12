@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+	<h1 id="h"></h1>
+
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+		<li>Item 6</li>
+	</ul>
+
+	<div id="id1">Your selection:</div>
+
+	<button id="b2">sign out</button>
+
+	<script>
+		var name1 = localStorage.getItem('name');
+		
+		
+		
+		localStorage.setItem('item1', "item1");
+		localStorage.setItem('item2', "item2");
+		localStorage.setItem('item3', "item3");
+		localStorage.setItem('item4', "item4");
+		localStorage.setItem('item5', "item5");
+		localStorage.setItem('item6', "item6");
+
+		/*console.log(name1);*/
+		$("h1").append(" Welcome " + name1);
+
+		function check1() {
+			localStorage.removeItem('name');
+			$("h1").empty();
+			$("h1").append(" Welcome ");
+			#("#id1").remove();
+
+		}
+		var i = 0;
+		$("body").on("click", "li", function() {
+			sessionStorage.setItem('item'+i, $(this).text());
+			i++;
+			$("div").append("<br/>" + $(this).text());
+		})
+	</script>
+
+
+
+</body>
+</html>

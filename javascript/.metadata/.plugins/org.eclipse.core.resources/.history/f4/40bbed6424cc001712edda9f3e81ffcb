@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#playpauseBtn").click(playPauseHandler);
+		$("#increaseVolume_Btn").click(increaseVolHandler);
+		$("#decreaseVolume_Btn").click(decreaseVolHandler);
+
+		function playPauseHandler() {
+			var video1 = document.getElementById("video1");
+			if (video1.paused) {
+				video1.play();
+				$("#play_pause_Btn").prop("value", "Pause");
+			} else {
+				video1.pause();
+				$("#play_pause_Btn").prop("value", "Play");
+			}
+		}
+
+		function increaseVolHandler() {
+			var video1 = document.getElementById("video1");
+			if (video1.volume == 1.0) {
+				alert("Volume is max.");
+			} else {
+				video1.volume += 0.1;
+			}
+		}
+
+		function decreaseVolHandler() {
+			var video1 = document.getElementById("video1");
+			if (video1.volume < 0.1) {
+
+				alert("Volume is min.");
+			} else {
+
+				video1.volume -= 0.1;
+			}
+		}
+
+	});
+</script>
+</head>
+
+<body>
+
+	<video id="video1" src="media/podcast_teaser.mp4"></video>
+	<div>
+		<input type="button" id="playpauseBtn" value="Play" /> <input
+			type="button" id="decreaseVolume_Btn" value="Decrease Vol" /> <input
+			type="button" id="increaseVolume_Btn" value="Increase Vol" />
+	</div>
+</body>
+
+</html>

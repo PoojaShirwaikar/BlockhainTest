@@ -1,0 +1,14 @@
+package com.psl;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainClass {
+	public static void main(String[] args) throws Exception {
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				"bean.xml");
+		Performer p = (Performer) context.getBean("performer");
+		p.perform("abcd", "kk");
+
+	}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<ul id="myList"><li id="i1">JavaScript</li><li>JQuery</li><li>AngularJS</li><li>NodeJS</li></ul>
+
+
+<button onclick="fisrtchild()"> Get first child </button>
+<button onclick="nextstring()"> Get next </button>
+<button onclick="lastchild()"> Get last child </button>
+<button onclick="previous()"> Get previous</button>
+<button onclick="childnodes()"> Get child node </button>
+<button onclick="partentnode()"> Get parent node</button>
+
+
+<script>
+// var b1=document.getElementById("i1");
+// b1.onclick=fisrtchild;
+
+//<p id="demo"></p>
+
+function fisrtchild(){
+    var x = document.getElementById("myList").firstChild.innerHTML;
+  // alert(x);
+    document.write(x);
+
+}
+
+
+
+function nextstring(){
+    var x = document.getElementById("myList").firstChild.nextSibling.innerHTML;
+
+  // alert(x);
+    document.write(x);
+}
+
+
+function lastchild(){
+    var x = document.getElementById("myList").lastChild.innerHTML;
+    document.write(x);
+
+}
+
+function previous(){
+    var x = document.getElementById("myList").lastChild.previousSibling.innerHTML;
+    document.write(x);
+
+}
+
+
+function childnodes(){
+    var c = document.getElementById("myList").childNodes;
+    var txt = "";
+    var i;
+    for (i = 0; i < c.length; i++) {
+        txt = txt + c[i].childNodes[0].nodeValue + "<br>";
+    }
+
+    document.write(txt);
+
+}
+
+function partentnode(){
+    //var x = document.getElementById("myList").nodeName;
+    var x = document.getElementById("myList").firstChild.parentNode.nodeName;
+    document.write(x);
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+       
+    <script>
+      
+
+        // .isNumeric()
+        $(function () {
+            // true (numeric)
+            console.log($.isNumeric("-10"));
+            console.log($.isNumeric("0"));
+            console.log($.isNumeric(0xFF));
+            console.log($.isNumeric("0xFF"));
+            console.log($.isNumeric("8e5"));
+            console.log($.isNumeric("3.1415"));
+            console.log($.isNumeric(+10));
+            console.log($.isNumeric(0144));
+
+            // false (non-numeric)
+            console.log($.isNumeric("-0x42"));
+            console.log($.isNumeric("7.2acdgs"));
+            console.log($.isNumeric(""));
+            console.log($.isNumeric({}));
+            console.log($.isNumeric(NaN));
+            console.log($.isNumeric(null));
+            console.log($.isNumeric(true));
+            console.log($.isNumeric(Infinity));
+            console.log($.isNumeric(undefined));
+        });
+    </script>
+</body>
+</html>
+

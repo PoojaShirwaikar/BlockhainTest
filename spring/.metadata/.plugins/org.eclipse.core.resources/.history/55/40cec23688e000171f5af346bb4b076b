@@ -1,0 +1,15 @@
+package com.psl;
+
+public class Audience {
+	public void takeSeats() {
+		System.out.println("take seats");
+	}
+
+	public void SwitchOffPhones() {
+		System.out.println("switch off phones");
+	}
+
+	public void demandRefund() {
+		System.out.println("Demand refund");
+	}
+}

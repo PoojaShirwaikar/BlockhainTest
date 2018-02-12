@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		$("body").on("click", "ul,li,div,p", function() {
+			var l = this.children.length;
+			alert(this.nodeName + " " + l);
+		})
+
+	});
+</script>
+</head>
+<body>
+	<ul id="list1">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+		<li>Water</li>
+		<li>Bread</li>
+		<li>Butter</li>
+	</ul>
+
+	<div id="id1">Div 1</div>
+	<div id="id2">Div 2</div>
+	<div id="id3">Div 3</div>
+
+	<p id="para1">Paragraph 1</p>
+	<p id="para2">Paragraph 2</p>
+	<p id="para3">Paragraph 3</p>
+
+
+</body>
+</html>

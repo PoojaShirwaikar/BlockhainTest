@@ -1,0 +1,9 @@
+package com.psl.ques2;
+
+public class Thread100 {
+
+	public Thread100() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

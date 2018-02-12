@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		var count1 = 0;
+		var count2 = 0;
+
+		$("body").on("click", "button", clicked);
+		$("button").trigger("click");
+		function clicked1() {
+
+			count1++;
+		}
+		function clicked2() {
+
+			count2++;
+		}
+
+	});
+</script>
+</head>
+<body>
+	<button id="b1">button 1</button>
+	<button id="b2">button 2</button>
+	<p>button 1 clicks</p>
+	<p>button 2 clicks</p>
+
+
+</body>
+</html>

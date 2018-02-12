@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="com.psl.beans.User" id="user">
+		<constructor-arg name="id" value="1"></constructor-arg>
+		<constructor-arg name="name" value="pooja"></constructor-arg>
+		<constructor-arg name="accno" value="123456"></constructor-arg>
+		<constructor-arg name="balance" value="20000"></constructor-arg>
+	</bean>
+
+	<bean class="com.psl.beans.Transaction" id="transaction">
+		<constructor-arg name="user" ref="user"></constructor-arg>
+		<constructor-arg name="action" value="deposit"></constructor-arg>
+		<constructor-arg name="amt" value="10000"></constructor-arg>
+	</bean>
+
+	<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		id="ds">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/employeedb"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
+	</bean>
+
+
+</beans>

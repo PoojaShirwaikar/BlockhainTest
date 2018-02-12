@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function() {
+		//$("li[id=item3]").css("border", "5px solid green");
+		//$(".a").css("backgroundColor", "yellow");
+	//	$("div:lt(2),p:lt(2)").css("border", "5px solid blue");
+		//$("li:first, li:last").css("fontSize", "46px");
+
+		//$("*[id*=ar]").css("backgroundColor", "grey");
+	//	$("ul+p").css("border", "5px solid green");
+	//	$("ul").siblings().css("border", "5px solid green");
+		$("*").css("border", "5px solid green");
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

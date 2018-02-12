@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	Name:
+	<input id="i1" type="text"/>
+	<button id="b1" onclick="check()">click me</button>
+	<script>
+			document.write("visitor hits: " + (localStorage.visitor = 1));
+	</script>
+</body>
+</html>

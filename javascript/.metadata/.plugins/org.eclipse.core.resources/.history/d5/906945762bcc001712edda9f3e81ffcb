@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#replay1").click(replayHandler);
+
+
+		function replayHandler(){
+			var video1 = document.getElementById("video1");
+/* 			video1.pause();
+ */			video1.currentTime = 0;
+/* 			video1.play();
+ */
+		}
+</script>
+</head>
+
+<body>
+	<video id="video1" src="podcast_teaser.mp4" ></video>
+	<div>
+		<input type="button" id="replay1" value="Replay" />
+
+	</div>
+</body>
+
+</html>

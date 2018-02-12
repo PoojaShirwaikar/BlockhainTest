@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function() {
+		$("form :input").focusin(function() {
+
+			$(this).css("backgroundColor", "yellow");
+		})
+		$("form :input").focusout(function() {
+
+			$(this).css("backgroundColor", "white");
+		})
+
+	});
+</script>
+<style>
+.tables {
+	
+	background: yellow;
+	
+}
+</style>
+</head>
+<body>
+	<form action="\" method="post">
+
+		<table>
+			<tbody>
+				<tr>
+					<td>First name</td>
+					<td><input id="FirstName" type="text" />
+				</tr>
+				<tr>
+					<td>middle name</td>
+					<td><input id="middlename" type="text" disabled="disabled" />
+				</tr>
+				<tr>
+					<td>last name</td>
+					<td><input id="lastName" type="text" />
+				</tr>
+				<tr>
+					<td>address</td>
+					<td><input id="address" type="text" />
+				</tr>
+
+			</tbody>
+		</table>
+	</form>
+
+</body>
+</html>

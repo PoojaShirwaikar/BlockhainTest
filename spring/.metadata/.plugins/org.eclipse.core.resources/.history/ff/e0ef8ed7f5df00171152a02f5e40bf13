@@ -1,0 +1,50 @@
+package com.psl.assignment1;
+
+public class Train {
+	private String time;
+	private String destination;
+	private String source;
+	private String name;
+
+	public Train() {
+		System.out.println("train default constructor");
+	}
+
+	public Train(String time, String destination, String source) {
+		System.out.println("train parametrised constructor");
+		this.time = time;
+		this.destination = destination;
+		this.source = source;
+	}
+
+	@Override
+	public String toString() {
+		return "Train [time=" + time + ", destination=" + destination
+				+ ", source=" + source + "]";
+	}
+
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
+	}
+
+	public String getDestination() {
+		return destination;
+	}
+
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#playpause").click(playPauseHandler);
+		$("#increaseVolume").click(increaseVolHandler);
+		$("#decreaseVolume").click(decreaseVolHandler);
+
+		function playPauseHandler() {
+			var ad1 = document.getElementById("ad1");
+			if (ad1.paused) {
+				ad1.play();
+				$("#playpause").prop("value", "Pause");
+			} else {
+				ad1.pause();
+				$("#playpause").prop("value", "Play");
+			}
+		}
+
+		function increaseVolHandler() {
+			var ad1 = document.getElementById("ad1");
+			if (ad1.volume == 1.0) {
+				alert("Volume is max.");
+			} else {
+				ad1.volume += 0.1;
+			}
+		}
+
+		function decreaseVolHandler() {
+			var ad1 = document.getElementById("ad1");
+			if (ad1.volume < 0.1) {
+
+				alert("Volume is min.");
+			} else {
+
+				ad1.volume -= 0.1;
+			}
+		}
+
+	});
+</script>
+</head>
+
+<body>
+	<img src="Bruce.jpg">
+	<audio id="ad1" src="guitar.mp3"></audio>
+	<div>
+		<input type="button" id="playpause" value="Play" /> <input
+			type="button" id="decreaseVolume" value="Decrease Vol" /> <input
+			type="button" id="increaseVolume" value="Increase Vol" />
+	</div>
+</body>
+
+</html>

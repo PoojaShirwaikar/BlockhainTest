@@ -1,0 +1,10 @@
+package com.psl.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.psl.service.BloodBankService;
+
+@Controller
+public class BloodBankController {
+	private BloodBankService service;
+}

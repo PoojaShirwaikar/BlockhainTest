@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<style>
+.m {
+	background: green;
+}
+</style>
+<script>
+	$(function() {
+
+		$("body").on("click mouseover", "div", clicked);
+		//$("body").one("mouseover", "div", mouseOver);
+
+		function clicked(event) {
+
+			if (event.type == "mouseover") {
+				$("#divs").css("background", "red");
+				alert(event.type + " occured");
+			} else if (event.type == "click") {
+				$("#divs").css("background", "yellow");
+				alert(event.type + " occured");
+			}
+
+		}
+
+		/* function clicked(event) {
+			$("#divs").css("background", "yellow");
+			alert(event.type+" occured");
+		}
+		function mouseOver(event) {
+			$("#divs").css("background", "red");
+			alert(event.type+" occured");
+
+		} */
+	});
+</script>
+
+</head>
+<body>
+	<div id="divs" class="m">here</div>
+</body>
+</html>

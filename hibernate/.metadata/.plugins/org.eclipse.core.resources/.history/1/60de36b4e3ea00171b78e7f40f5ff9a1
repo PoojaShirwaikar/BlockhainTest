@@ -1,0 +1,10 @@
+package com.app.model;
+
+public class Address {
+
+	private int flatno;
+	private String locality;
+	private String state;
+	private long pincode;
+
+}

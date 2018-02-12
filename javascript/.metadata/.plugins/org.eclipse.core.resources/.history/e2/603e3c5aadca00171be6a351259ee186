@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		$("#personaldetails").click(function() {
+			var n = $("#name").val();
+			var url = "requestProcessorXML.jsp?name="+n;
+			$.ajax({
+				type : "GET",
+				url : url,
+				dataType : "XML",
+				success : function(response) {
+					console.log(response);
+				
+					 var x=response.getElementsByTagName("data")[0];
+
+				 	$("#name").val(x.childNodes[0].textContent);
+					$("#lastname").val(x.childNodes[1].textContent);
+					$("#city").val(x.childNodes[2].textContent);
+					$("#contact").val(x.childNodes[3].textContent);
+ 
+				}
+			})
+		})
+		
+		
+		$("#projectdetails").click(function() {
+			var pid = $("#projectid").val();
+			var url = "requestProcessorJSON.jsp?projectid="+pid;
+			$.ajax({
+				type : "GET",
+				url : url,
+				dataType : "JSON",
+				success : function(response) {
+					console.log(response);
+				    	 $("#projectid").val(response.projectid);
+						$("#projectlocation").val(response.projectlocation);  
+				}
+			})
+		})
+		
+		
+		
+	});
+</script>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td><label>name</label></td>
+			<td><input type="text" id="name"></td>
+		</tr>
+
+		<tr>
+			<td><label>last name </label></td>
+			<td><input type="text" id="lastname"></td>
+		</tr>
+		<tr>
+			<td><label>city</label></td>
+			<td><input type="text" id="city"></td>
+		</tr>
+
+		<tr>
+			<td><label>contact number </label></td>
+			<td><input type="text" id="contact"></td>
+		</tr>
+
+		<tr>
+			<td><input type="submit" id="personaldetails"
+				value="get personal details"></td>
+		</tr>
+		<tr>
+			<td><label>project id</label></td>
+			<td><input type="text" id="projectid"></td>
+		</tr>
+
+		<tr>
+			<td><label>project location </label></td>
+			<td><input type="text" id="projectlocation"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" id="projectdetails"
+				value="get project details"></td>
+		</tr>
+	</table>
+</body>
+</html>

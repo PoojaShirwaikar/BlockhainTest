@@ -1,0 +1,9 @@
+package com.tienda.bean;
+
+import java.util.Set;
+
+public class WishList {
+	private int wishlistId;
+	private User wishedBy;
+	private Set<Product> wishes;
+}

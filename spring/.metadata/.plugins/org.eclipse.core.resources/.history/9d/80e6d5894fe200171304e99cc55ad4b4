@@ -1,0 +1,59 @@
+package com.psl.beans;
+
+import org.springframework.stereotype.Component;
+
+public class BloodBank {
+	private int id;
+	private String name;
+	private int age;
+	private String bloodgroup;
+
+	public BloodBank() {
+	}
+
+	public BloodBank(int id, String name, int age, String bloodgroup) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.bloodgroup = bloodgroup;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getBloodgroup() {
+		return bloodgroup;
+	}
+
+	public void setBloodgroup(String bloodgroup) {
+		this.bloodgroup = bloodgroup;
+	}
+
+	@Override
+	public String toString() {
+		return "BloodBank [id=" + id + ", name=" + name + ", age=" + age
+				+ ", bloodgroup=" + bloodgroup + "]";
+	}
+
+}

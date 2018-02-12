@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		/* $("div").click(function() {
+			alert("div clicked");
+		});
+		 */
+
+		/* $("div").bind("click", clicked); */
+
+		//	$("body").delegate("div", "click", clicked);
+		$("body").on("click", "div", clicked);
+
+		function clicked() {
+			alert("div clicked");
+			//$("body").off("click");
+		}
+		$("#b1").click(function() {
+			$("body").append("<div> dynamically attached div!!!!!</div>")
+		})
+	});
+</script>
+</head>
+<body>
+	<div>statically added div!!</div>
+	<button id="b1">Add div</button>
+
+</body>
+</html>

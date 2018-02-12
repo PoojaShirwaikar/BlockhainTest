@@ -1,0 +1,7 @@
+package com.tienda.util;
+
+import javax.ws.rs.ext.ExceptionMapper;
+
+public class TiendaExceptionMapper implements ExceptionMapper<TiendaException> {
+
+}

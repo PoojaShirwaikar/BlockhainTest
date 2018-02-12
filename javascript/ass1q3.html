@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str=prompt("Enter a string");
+        var words=str.split(" ");
+
+        var max=0, ind=0, len=0;
+        for (var index = 0; index < words.length; index++) {
+           
+            if( words[index].length>max)
+            {
+                max=words[index].length;
+                ind=index;
+
+            }
+            
+            
+        }
+
+        document.write(words[ind]);
+        
+    </script>
+</body>
+</html>

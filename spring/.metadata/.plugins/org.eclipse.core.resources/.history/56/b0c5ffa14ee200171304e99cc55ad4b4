@@ -1,0 +1,30 @@
+package com.psl.service;
+
+public class BloodBankService {
+	private iDonorDAO dao;
+
+	public iDonorDAO getDao() {
+		return dao;
+	}
+
+	public void setDao(iDonorDAO dao) {
+		this.dao = dao;
+	}
+
+	public void createDonor(Donor e) {
+		dao.createDonor(e);
+
+	}
+
+	public void updateDonor(int id, String name, String blood_grp) {
+		dao.updateDonor(id, name, blood_grp);
+	}
+
+	public void deleteDonor(int id) {
+		dao.deleteDonor(id);
+	}
+
+	public List<Donor> getAllDonors() {
+		return dao.getAllDonors();
+	}
+}

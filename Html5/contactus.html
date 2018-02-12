@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>geolocation with map</title>
+
+<style>
+#displaymap {
+	height: 400px;
+	width: 400px;
+	border: solid 2px black
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script
+	src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"
+	type="text/javascript">
+</script>
+</head>
+<body>
+
+        <div class="container">  
+                <form id="contact" action="" method="post">
+                  <h3>Quick Contact</h3>
+                  <h4>Contact us today, and get reply with in 24 hours!</h4>
+                  <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                  </fieldset>
+                </form>
+               
+                
+              </div>
+
+	<div id="info"></div>
+	<div id="errordiv"></div>
+	<div id="displaymap"></div>
+
+	<script>
+		$(function() {
+			if (navigator.geolocation) {
+				$("#info").html("fetching details");
+				var options = {
+					enableHighAccuracy : false,
+					maximumAge : 0,
+					timeout : 60000
+				}
+			}
+			navigator.geolocation.getCurrentPosition(onSuccess, onError,
+					options);
+
+			function onSuccess(position) {
+				$("#info").append("latitude: " + position.coords.latitude);
+				$("#info").append("longitude: " + position.coords.longitude);
+				initializeMap(position.coords.latitude,
+						position.coords.longitude);
+
+			}
+
+			function onError() {
+				$("#errordiv").html("Error occured ");
+
+			}
+
+		})
+
+		function initializeMap(latitude, longitude) {
+			var latlng = new google.maps.LatLng(latitude, longitude);
+			var myOptions = {
+				zoom : 16,
+				center : latlng,
+				mapTypeId : google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("displaymap"),myOptions);
+		}
+	</script>
+
+</body>
+</html>

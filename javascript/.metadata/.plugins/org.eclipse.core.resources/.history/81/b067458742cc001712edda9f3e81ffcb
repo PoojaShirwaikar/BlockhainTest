@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+$(function(){
+	var worker=new Worker('prog4.js');
+	worker.onmessage=function(event){
+		$('div').html(event.data);
+	}
+})
+</head>
+<body>
+
+</body>
+</html>

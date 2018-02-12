@@ -1,0 +1,23 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  
+</div>
+<ul>
+<li *ngFor="let user of userlist">{{user.name}}</li>
+</ul>
+<div>
+  <h2>Add User</h2>
+  <form (ngSubmit)="postForm(name.value,age.value,address.value);name.value='';age.value='';address.value=''">
+    <table>
+      <tr><td><label>Enter Name:</label></td><td><input type="text" #name name="name" /></td></tr>
+      <tr><td><label>Enter Age:</label></td><td><input type="text" #age name="age" /></td></tr>
+      <tr><td><label>Enter Address:</label></td><td><input type="text" #address name="address" /></td></tr>
+      <tr><td><input type="submit" value="Add" /></td></tr>
+    </table>
+   </form>  
+</div>
+
+
+

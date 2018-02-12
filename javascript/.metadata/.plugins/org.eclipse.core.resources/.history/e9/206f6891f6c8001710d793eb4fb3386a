@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<style>
+.m {
+	background: green;
+}
+</style>
+<script>
+	$(function() {
+
+		$("body").on("click", "div", mouseOver);
+
+		function mouseOver() {
+			$("#divs").css("background", "red");
+		}
+	});
+</script>
+
+</head>
+<body>
+	<div id="divs" class="m">here</div>
+</body>
+</html>

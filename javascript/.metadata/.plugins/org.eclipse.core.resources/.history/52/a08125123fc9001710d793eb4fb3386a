@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(function() {
+		$("#submit1").click(function() {
+
+		})
+	});
+</script>
+</head>
+<body>
+	<form action="\" method="post">
+
+		<table>
+			<tbody>
+				<tr>
+					<td>User name</td>
+					<td><input id="Name" type="text" />
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input id="pwd" type="password" />
+				</tr>
+				<tr>
+					<td><input id="submit1" type="submit" value="submit" /></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</form>
+
+</body>
+</html>

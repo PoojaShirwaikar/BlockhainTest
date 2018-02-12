@@ -1,0 +1,88 @@
+package com.app.main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+import com.app.model.Address;
+import com.app.model.Employee;
+import com.app.model.Student;
+
+public class Application {
+	public static void main(String[] args) {
+		List<Student> stud = populateEmployee();
+
+		SessionFactory sessionFactory = new Configuration().configure(
+				"hibernate.cfg.xml").buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+
+		// update
+		/*
+		 * Employee emp = (Employee) session.get(Employee.class, 3);
+		 * emp.setSkills("IoT,Node.js"); session.update(emp);
+		 */
+
+		// read
+		// Employee emp = (Employee) session.get(Employee.class, 1);
+
+		// delete
+		// Employee emp = (Employee) session.get(Employee.class, 2);
+		// session.delete(emp);
+
+		// create
+
+		for (Student s : stud) {
+			session.save(s);
+		}
+
+		session.getTransaction().commit();
+		session.close();
+		sessionFactory.close();
+
+	}
+
+	private static List<Student> populateEmployee() {
+		// TODO Auto-generated method stub
+
+		List<Student> employees = new ArrayList<Student>();
+		Student s1 = new Student();
+		// emp1.setId(1);
+		s1.setName("Rohit");
+		s1.getAddresses().add(new Address(101, "Bandra", "Mumbai", 1111));
+		s1.getAddresses().add(new Address(201, "Bandra", "Mumbai", 1122));
+
+		// emp1.setAddr(new Address(101, "Bandra", "Mumbai", 1111));
+		// emp1.setHomeaddr(new Address(201, "Bandra", "Mumbai", 1111));
+		emp1.setSkills("Java,Javascript");
+		employees.add(emp1);
+
+		Employee emp2 = new Employee();
+		// emp2.setId(2);
+		emp2.setName("Shikhar");
+		emp2.getAddresses().add(new Address(102, "RaceCourse", "Delhi", 2222));
+		emp2.getAddresses().add(new Address(202, "RaceCourse", "Delhi", 2233));
+
+		// emp2.setAddr(new Address(102, "RaceCourse", "Delhi", 2222));
+		// emp2.setHomeaddr(new Address(202, "RaceCourse", "Delhi", 2222));
+		emp2.setSkills("spring,hibernate");
+		employees.add(emp2);
+
+		Employee emp3 = new Employee();
+		// emp3.setId(3);
+		emp3.setName("Ashwin");
+		emp3.getAddresses()
+				.add(new Address(103, "Chennai", "Tamil Nadu", 3333));
+		emp3.getAddresses()
+				.add(new Address(203, "Chennai", "Tamil Nadu", 3344));
+		// emp3.setAddr(new Address(103, "Chennai", "Tamil Nadu", 3333));
+		// emp3.setHomeaddr(new Address(203, "Chennai", "Tamil Nadu", 3333));
+
+		emp3.setSkills("Angular4.js,AWS");
+		employees.add(emp3);
+		return null;
+	}
+}

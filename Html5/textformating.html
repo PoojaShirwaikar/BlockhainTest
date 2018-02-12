@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <p>Please complete all required field marked with a *</p>
+   
+<form>
+        <fieldset>
+         <legend>User Details:</legend>
+            First Name*: <input type="text" placeholder="Enter first name" required><br>
+            Last Name*: <input type="text" required><br>
+            Email*: <input type="email" required><br>
+            Password*:<input type="password" pattern="(?=.*\d)(?=.*[A-Z]).{6,20}"  required><br>
+        </fieldset>
+
+        <fieldset>
+                <legend>User Details:</legend>
+                   Birthday*: <input type="date" required><br>
+                   <fieldset>
+                        <legend>Gender*:</legend>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female<br> 
+                    </fieldset>
+        </fieldset>
+        <fieldset>
+                <legend>Address Details:</legend>
+                   <fieldset>
+                        <legend>Phone:</legend>
+                        Area Code*:<input type="text" pattern="[a-zA-Z]{2}\d{2}[a-zA-Z]{2}" required><br> 
+                       Three digits*:<input type="text" pattern="\d{3}" required><br> 
+                       Four digits*:<input type="text" pattern="\d{4}" required><br> 
+                    </fieldset>
+
+                    Location*:
+                    <input type="text" list="cnt" required>
+                    <datalist id="cnt" >
+                            <option value="India"></option>
+                            <option value="usa"></option>
+                            <option value="uk"></option>
+                            <option value="china"></option>
+                            <option value="other"></option>
+                    </datalist>
+                    <br> 
+
+                    Zip Code*:<input type="text" pattern="\d{6}" required><br>      
+        </fieldset>
+        <fieldset>
+                <legend>Termsof Service:</legend>
+                  <input type="checkbox" required>*I aggree to terms of service
+        </fieldset>
+
+        <br>
+        <br>
+        <button type="submit" value="submit">submit</button>
+        <button type="reset" value="cancel">cancel</button>
+        
+       </form>
+      
+</body>
+</html>

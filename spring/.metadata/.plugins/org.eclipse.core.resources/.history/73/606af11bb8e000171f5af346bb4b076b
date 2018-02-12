@@ -1,0 +1,7 @@
+package com.psl;
+
+public class Shop {
+	public void buy() {
+
+	}
+}

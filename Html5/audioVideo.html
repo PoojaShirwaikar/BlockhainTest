@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+    <!-- <audio src="C:\Users\Public\Music\Sample Music\Kalimba.mp3" controls autoplay loop>not supported by browser</audio> -->
+    <video id="v1" poster="Lighthouse.jpg">
+    <source src="media/podcast_teaser.mp4" type="video/mp4" ></source></video>
+<button id="b1">full screen</button>
+<script>
+    $(function() {
+            $("#b1").click(function() {
+                // var i = document.getElementById("v1");
+                var i=$("#v1")[0];
+
+                if (i.requestFullscreen) {
+                    i.requestFullscreen();
+                } else if (i.webkitRequestFullscreen) {
+                    i.webkitRequestFullscreen();
+                } else if (i.mozRequestFullScreen) {
+                    i.mozRequestFullScreen();
+                } else if (i.msRequestFullscreen) {
+                    i.msRequestFullscreen();
+                }
+            //  $("#v1").RequestFullScreen()
+            // document.getElementsByTagName("video").requestFullscreen();
+    
+            // alert($("#v1").requestFullScreen());
+        })
+    });
+    </script>
+</body>
+</html>

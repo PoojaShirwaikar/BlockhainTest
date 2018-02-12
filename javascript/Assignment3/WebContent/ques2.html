@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="alternate('table1')">
+	<table id="table1" border=1>
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>Jack</td>
+			<td>Samson</td>
+			<td>90</td>
+		</tr>
+
+	</table>
+
+	<script>
+		function alternate(id) {
+			if (document.getElementsByTagName) {
+				var table = document.getElementById(id);
+				var rows = table.getElementsByTagName("tr");
+				 for (i = 1; i < rows.length; i++) {
+					if (i % 2 == 0) {
+						rows[i].style.backgroundColor = "#b3e6ff";
+
+					} else {
+						rows[i].style.backgroundColor = "pink";
+					}
+				} 
+				
+
+				/*  var header = table.getElementsByTagName("th");
+				header.style.fontStyle = "bold";  */
+
+				for (i = 1; i < rows.length; i++) {
+					var t = rows[i].cells;
+
+					for (j = 0; j < t.length; j++) {
+						if (j % 2 == 0) {
+							t[j].style.backgroundColor = "#b3e6ff";
+						} else {
+							t[j].style.backgroundColor = "pink";
+
+						}
+					}
+
+				}
+				
+				rows[rows.length - 1].style.fontStyle = "italic";
+				
+				for (i = 1; i < rows.length; i++) {
+					rows[i].firstElementChild.style.textDecoration = "underline";
+				}
+
+			}
+		}
+	</script>
+
+</body>
+</html>

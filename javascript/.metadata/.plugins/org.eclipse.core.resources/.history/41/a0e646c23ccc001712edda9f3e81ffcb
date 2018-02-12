@@ -1,0 +1,10 @@
+self.onMessage()
+
+	alert("hey");
+	for (i = 1; i <= j; i++) {
+		if ((i % 2) == 0) {
+			postMessage(i);
+		}
+	}
+	
+
